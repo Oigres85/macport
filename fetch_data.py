@@ -182,4 +182,16 @@ def main():
     print("data.json scritto:", out["updated"])
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        # rete di sicurezza: qualunque errore non deve far fallire il workflow.
+        sys.stderr.write("ERRORE main: %s\n" % e)
+        import datetime as _dt
+        fallback = {"updated": _dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC") + " (fallback)",
+                    "drivers": [], "titoli": [], "news": {"macro": [], "titoli": {}},
+                    "errore": str(e)}
+        with open("data.json", "w", encoding="utf-8") as f:
+            json.dump(fallback, f, ensure_ascii=False, indent=2)
+        print("scritto data.json di fallback per non bloccare il workflow")
+
