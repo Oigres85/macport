@@ -12,11 +12,11 @@ import json, urllib.request, datetime, sys
 # ---- simboli Stooq ----
 # driver macro
 DRIVERS_SYM = {
-    "US10Y":    "10usy.b",   # rendimento Treasury 10 anni
+    "US10Y":    "ief.us",    # proxy: ETF Treasury 7-10a (sale quando i rendimenti scendono)
     "PETROLIO": "cl.f",      # WTI crude futures
     "BITCOIN":  "btcusd",    # bitcoin
     "EUR/USD":  "eurusd",    # cambio
-    "VIX":      "^vix",      # volatilita CBOE
+    "VIX":      "vixy.us",   # proxy: ETF VIX short-term (sale quando la volatilita sale)
     "TAIWAN / SEMI": "smh.us" # proxy: ETF semiconduttori (catena TSMC/AI)
 }
 # i tuoi 8 titoli
@@ -70,7 +70,8 @@ def direction(name, last, chg):
     if last is None:
         return 50, "n.d.", 0
     if name == "US10Y":
-        fav = last <= 4.5
+        # proxy IEF: bond su (chg>=0) -> rendimenti giu -> favorevole growth
+        fav = (chg is None) or (chg >= 0)
         return (28 if fav else 75), ("FAVOREVOLE" if fav else "AVVERSO"), (1 if fav else -1)
     if name == "PETROLIO":
         adv = last >= 85
@@ -82,9 +83,11 @@ def direction(name, last, chg):
         adv = last > 1.15
         return (60 if adv else 45), ("AVVERSO LIEVE" if adv else "NEUTRO"), (-1 if adv else 0)
     if name == "VIX":
-        if last < 18:  return 35, "FAVOREVOLE (fragile)", 1
-        if last < 28:  return 65, "ALLERTA", -1
-        return 90, "CAPITOLAZIONE", -1
+        # proxy VIXY: sale = volatilita su = avverso ai beta alti
+        if chg is None:   return 35, "n.d.", 0
+        if chg <= 0:      return 32, "FAVOREVOLE (vol calo)", 1
+        if chg < 10:      return 60, "VOL IN SALITA", -1
+        return 85, "ALLERTA VOL", -1
     if name == "TAIWAN / SEMI":
         fav = (chg is None or chg >= -1)
         return (25 if fav else 60), ("FAVOREVOLE" if fav else "MONITORARE"), (1 if fav else -1)
@@ -98,10 +101,10 @@ def main():
         pos, stato, dsign = direction(name, last, chg)
         dir_sign[name] = dsign
         if name == "BITCOIN":   val = ("$%.1fk" % (last/1000)) if last else "n.d."
-        elif name == "US10Y":   val = ("%.2f%%" % last) if last else "n.d."
+        elif name == "US10Y":   val = (("rend. \u2193" if (chg is not None and chg>=0) else "rend. \u2191")) if last else "n.d."
         elif name == "EUR/USD": val = ("%.3f" % last) if last else "n.d."
         elif name == "PETROLIO":val = ("$%.0f" % last) if last else "n.d."
-        elif name == "VIX":     val = ("%.1f" % last) if last else "n.d."
+        elif name == "VIX":     val = (("vol %+.1f%%" % chg)) if (last and chg is not None) else "n.d."
         else:                   val = (("%+.1f%%" % chg) if chg is not None else "n.d.")
         drivers.append({"k":name,"val":val,"pos":round(pos),"stato":stato,
                         "chg":(round(chg,1) if chg is not None else None),
