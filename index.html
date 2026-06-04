@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catena Macro → Portafoglio</title>
+<title>Macro → Portafoglio</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
-  :root{--bg:#000;--card:#0c0c0e;--bd:#1c1c1f;--txt:#ececec;--mut:#8a8a90;--dim:#56565c;
-    --grn:#26d07c;--red:#ff5470;--amb:#ffb02e;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace}
+  :root{--bg:#000;--card:#0c0c0e;--bd:#1c1c1f;--bd2:#2a2a2e;--txt:#ececec;--mut:#8a8a90;--dim:#56565c;
+    --grn:#26d07c;--red:#ff5470;--amb:#ffb02e;--cy:#35d6e8;--vio:#b07cff;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace}
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--bg);color:var(--txt);font-family:var(--mono);line-height:1.5;-webkit-font-smoothing:antialiased}
   .wrap{max-width:760px;margin:0 auto;padding:14px}
@@ -15,15 +15,19 @@
   h1{font-size:16px;font-weight:700;letter-spacing:.3px}
   h2{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--mut);text-transform:uppercase;margin-bottom:12px}
   .sub{font-size:10px;color:var(--dim)}
-  .drv{padding:11px 0;border-bottom:1px solid var(--bd)}
+  .drv{padding:10px 0;border-bottom:1px solid var(--bd)}
   .drv:last-child{border-bottom:none}
-  .scale{position:relative;height:7px;background:linear-gradient(90deg,var(--grn),var(--amb),var(--red));border-radius:4px;margin:7px 0 6px}
-  .mark{position:absolute;top:-3px;width:4px;height:13px;background:#fff;border-radius:2px;box-shadow:0 0 6px #fff8}
+  .scale{position:relative;height:8px;background:linear-gradient(90deg,var(--grn),var(--amb),var(--red));border-radius:4px;margin:7px 0 6px}
+  .mark{position:absolute;top:-3px;width:5px;height:14px;background:#fff;border-radius:2px;box-shadow:0 0 6px #fff8}
   .tag{font-family:var(--mono);font-size:8px;border-radius:4px;padding:1px 6px;border:1px solid}
   .chip{display:inline-block;font-family:var(--mono);font-size:10px;border-radius:5px;padding:2px 7px;margin:0 4px 4px 0}
   table{width:100%;border-collapse:collapse}
-  th,td{padding:7px 3px;text-align:center}
+  th,td{padding:6px 3px;text-align:center}
   .note{font-size:10.5px;color:var(--mut);line-height:1.55;margin-top:8px}
+  .seg{display:flex;align-items:flex-start;gap:9px;padding:7px 0;border-bottom:1px solid var(--bd)}
+  .seg:last-child{border-bottom:none}
+  .nw{display:block;padding:8px 0;border-bottom:1px solid var(--bd);text-decoration:none;color:inherit}
+  .nw:last-child{border-bottom:none}
   .foot{font-size:9px;color:var(--dim);text-align:center;padding:14px 0;line-height:1.5}
 </style>
 </head>
@@ -32,32 +36,37 @@
 <script>
 window.onerror=function(m,s,l){var a=document.getElementById("app");if(a)a.innerHTML='<div style="color:#ff5470;padding:24px;font-size:13px">Errore: '+m+' (riga '+l+')</div>';return false;};
 
-var C={grn:"#26d07c",red:"#ff5470",amb:"#ffb02e",mut:"#8a8a90",dim:"#56565c",bd:"#1c1c1f"};
+var C={grn:"#26d07c",red:"#ff5470",amb:"#ffb02e",cy:"#35d6e8",vio:"#b07cff",mut:"#8a8a90",dim:"#56565c",bd:"#1c1c1f",bd2:"#2a2a2e"};
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[m];});}
 function expColor(v){return v>=2?C.grn:v===1?"#1c7a4d":v===0?"#2a2a2e":v===-1?"#9a3550":C.red;}
 function expGlyph(v){return v>0?"\u25B2":v<0?"\u25BC":"\u00B7";}
-
-// letture di trasmissione per driver (testo fisso che spiega il meccanismo)
+function chgCol(c){return c==null?C.dim:c>=0?C.grn:C.red;}
+function fmtVol(v){if(v==null)return "";if(v>=1e9)return (v/1e9).toFixed(1)+"B";if(v>=1e6)return (v/1e6).toFixed(1)+"M";if(v>=1e3)return (v/1e3).toFixed(0)+"k";return ""+v;}
+var DIRCOL={CORE:C.grn,HOLD:C.cy,"HOLD-STOP":C.amb,TRIM:C.amb,SELL:C.red,ADD:C.grn};
 var READ={
- "US10Y":"Rendimenti bassi/in calo: i growth ad alto multiplo respirano. In rialzo: comprimono le valutazioni.",
- "PETROLIO":"Oil alto alimenta inflazione, rischio rialzo rendimenti, vento contrario sui growth e su Tesla.",
- "BITCOIN":"Proxy del rischio crypto: pressione diretta su MSTR (bitcoin a leva).",
- "EUR/USD":"Euro forte erode i guadagni in dollari quando li riporti in euro. Pesa uniforme sul book USD.",
- "VIX":"Volatilita bassa = regime calmo ma poca protezione; in salita colpisce prima i beta alti.",
- "TAIWAN / SEMI":"Salute della catena TSMC/AI: vento strutturale per i semiconduttori del tuo book."
+ "US10Y":"Rendimenti in calo: i growth respirano. In rialzo: comprimono le valutazioni.",
+ "PETROLIO":"Oil alto = inflazione e rischio rialzo rendimenti: contro growth e Tesla.",
+ "BITCOIN":"Proxy rischio crypto: pressione diretta su MSTR (bitcoin a leva).",
+ "EUR/USD":"Euro forte erode i guadagni in dollari. Pesa uniforme sul book USD.",
+ "VIX":"Volatilita: bassa = calmo ma poca protezione; in salita colpisce i beta alti.",
+ "TAIWAN / SEMI":"Salute catena TSMC/AI: vento strutturale per i semiconduttori."
 };
 var ABBR={"US10Y":"10Y","PETROLIO":"OIL","BITCOIN":"BTC","EUR/USD":"\u20ac/$","VIX":"VIX","TAIWAN / SEMI":"TW"};
 
 function render(D){
   var h="";
-  // header
+  var adv=D.drivers.filter(function(d){return d.pos>=60;}).map(function(d){return d.k;});
+  var fav=D.drivers.filter(function(d){return d.pos<45;}).map(function(d){return d.k;});
+
+  // HEADER
   h+='<div class="card" style="background:#000;border-color:#333">'
    +'<div style="display:flex;align-items:center;gap:9px"><span style="width:9px;height:9px;border-radius:50%;background:'+C.amb+';box-shadow:0 0 8px '+C.amb+'"></span>'
-   +'<h1>CATENA MACRO \u2192 PORTAFOGLIO</h1></div>'
-   +'<div class="sub" style="margin-top:5px">agg. '+esc(D.updated)+' \u00b7 8 titoli \u00b7 ~80% semi \u00b7 dati Stooq</div></div>';
+   +'<h1>MACRO \u2192 PORTAFOGLIO</h1></div>'
+   +'<div class="sub" style="margin-top:5px">agg. '+esc(D.updated)+' \u00b7 8 titoli \u00b7 dati Stooq + Google News</div>'
+   +'<div class="note" style="margin-top:10px;color:#c8c8cc">Venti a favore: <b style="color:'+C.grn+'">'+(fav.length?fav.join(", "):"\u2014")+'</b> \u00b7 venti contro: <b style="color:'+C.red+'">'+(adv.length?adv.join(", "):"\u2014")+'</b>. I beta alti (MSTR, RGTI, TSLA) sono i piu esposti quando i contrari prevalgono.</div></div>';
 
-  // 1) driver -> trasmissione
-  h+='<div class="card"><h2>\u2460 I driver macro \u2192 dove si trasmettono</h2>';
+  // 1) DRIVER
+  h+='<div class="card"><h2>\u2460 Driver macro \u2192 dove si trasmettono</h2>';
   D.drivers.forEach(function(d){
     var col=d.pos>=60?C.red:d.pos>=45?C.amb:C.grn;
     var hit=D.titoli.filter(function(t){return Math.abs(t.exp[d.k])>=2;})
@@ -72,41 +81,102 @@ function render(D){
      +'<div style="font-size:10.5px;color:#c8c8cc;line-height:1.5">'+esc(READ[d.k]||"")+'</div>'
      +'<div style="margin-top:6px">'+hit+'</div></div>';
   });
-  h+='<div class="note">Barra a sinistra = oggi <b style="color:'+C.grn+'">aiuta</b>, a destra = <b style="color:'+C.red+'">penalizza</b>. I chip = titoli su cui pesa di piu (\u25B2 a favore / \u25BC contro).</div></div>';
+  h+='<div class="note">Barra: sinistra <b style="color:'+C.grn+'">aiuta</b>, destra <b style="color:'+C.red+'">penalizza</b>. Chip = titoli piu colpiti (\u25B2 a favore / \u25BC contro).</div></div>';
 
-  // 2) matrice
+  // 2) SEGNALI
+  var seg=[];
+  D.drivers.forEach(function(d){
+    if(d.k==="VIX"&&d.pos>=60)seg.push({t:"Volatilita in salita: i beta alti correggono per primi",imp:"MSTR \u00b7 RGTI \u00b7 TSLA",col:C.red});
+    if(d.k==="BITCOIN"&&d.pos>=60)seg.push({t:"Bitcoin sotto pressione: crypto-winter tecnico",imp:"MSTR (proxy a leva)",col:C.red});
+    if(d.k==="PETROLIO"&&d.pos>=60)seg.push({t:"Petrolio alto: inflazione e rischio rialzo rendimenti",imp:"growth e TSLA",col:C.amb});
+    if(d.k==="EUR/USD"&&d.pos>=55)seg.push({t:"Euro forte: erode i guadagni in dollari",imp:"tutto il book USD",col:C.amb});
+    if(d.k==="US10Y"&&d.pos<45)seg.push({t:"Rendimenti in calo: ossigeno sui multipli growth",imp:"FAVOREVOLE NVDA \u00b7 MU",col:C.grn});
+  });
+  if(seg.length){
+    h+='<div class="card"><h2>\u26A0 Segnali da monitorare</h2>';
+    seg.forEach(function(s){h+='<div class="seg"><div style="flex:0 0 5px;align-self:stretch;background:'+s.col+';border-radius:2px;min-height:26px"></div>'
+      +'<div style="flex:1"><div style="font-size:11px;color:#d8d8dc;line-height:1.4">'+esc(s.t)+'</div>'
+      +'<div style="font-size:9px;color:'+s.col+';font-family:var(--mono);margin-top:3px">\u2192 '+esc(s.imp)+'</div></div></div>';});
+    h+='</div>';
+  }
+
+  // 3) MATRICE
   h+='<div class="card"><h2>\u2461 Matrice \u2014 ogni vento su ogni titolo</h2><div style="overflow-x:auto"><table>';
-  h+='<thead><tr><th style="text-align:left;font-size:8px;color:'+C.dim+'">TITOLO</th>';
+  h+='<thead><tr><th style="text-align:left;font-size:8px;color:'+C.dim+'">TIT</th>';
   D.drivers.forEach(function(d){h+='<th style="font-size:8px;color:'+C.dim+'">'+(ABBR[d.k]||d.k)+'</th>';});
   h+='<th style="font-size:8px;color:'+C.dim+'">NET</th></tr></thead><tbody>';
   D.titoli.forEach(function(t){
     var net=0;D.drivers.forEach(function(d){net+=t.exp[d.k];});
     var ncol=net>0?C.grn:net<0?C.red:C.mut;
-    h+='<tr style="border-top:1px solid '+C.bd+'"><td style="text-align:left"><b style="font-size:11px">'+t.t+'</b>'
-     +'<div style="font-size:7.5px;color:'+C.dim+'">'+t.sec+' \u00b7 \u03b2'+t.beta+'</div></td>';
+    h+='<tr style="border-top:1px solid '+C.bd+'"><td style="text-align:left"><b style="font-size:11px">'+t.t+'</b></td>';
     D.drivers.forEach(function(d){var v=t.exp[d.k];
-      h+='<td><div style="width:22px;height:22px;border-radius:5px;margin:0 auto;background:'+expColor(v)+';display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;opacity:'+(v===0?0.35:1)+'">'+expGlyph(v)+'</div></td>';});
+      h+='<td><div style="width:20px;height:20px;border-radius:5px;margin:0 auto;background:'+expColor(v)+';display:flex;align-items:center;justify-content:center;font-size:9px;color:#fff;opacity:'+(v===0?0.35:1)+'">'+expGlyph(v)+'</div></td>';});
     h+='<td><b style="font-size:12px;color:'+ncol+'">'+(net>0?"+":"")+net+'</b></td></tr>';
   });
-  h+='</tbody></table></div><div class="note">Colonna <b>NET</b> = somma dei venti: piu e rosso, piu quel titolo ha il meteo contro adesso. E li che guardi per primo.</div></div>';
+  h+='</tbody></table></div><div class="note"><b>NET</b> = somma dei venti: piu rosso = piu meteo contro adesso.</div></div>';
 
-  // 3) bussola
-  h+='<div class="card" style="border-color:#2a2a12"><h2 style="color:'+C.amb+'">\u2462 La bussola \u2014 regole fisse</h2>'
+  // 4) TABELLA TITOLI con DATI DINAMICI
+  h+='<div class="card"><h2>\u2462 I tuoi 8 titoli \u2014 dati di oggi</h2><div style="overflow-x:auto"><table>';
+  h+='<thead><tr>'
+   +'<th style="text-align:left;font-size:8px;color:'+C.dim+'">TITOLO</th>'
+   +'<th style="text-align:right;font-size:8px;color:'+C.dim+'">PREZZO</th>'
+   +'<th style="text-align:right;font-size:8px;color:'+C.dim+'">OGGI</th>'
+   +'<th style="text-align:right;font-size:8px;color:'+C.dim+'">VOL</th>'
+   +'<th style="font-size:8px;color:'+C.dim+'">DIR</th>'
+   +'<th style="text-align:right;font-size:8px;color:'+C.dim+'">STOP</th></tr></thead><tbody>';
+  D.titoli.forEach(function(t){
+    var dc=DIRCOL[t.dir]||C.mut;
+    h+='<tr style="border-top:1px solid '+C.bd+'">'
+     +'<td style="text-align:left"><b style="font-size:11px">'+t.t+'</b><div style="font-size:7px;color:'+C.dim+'">'+t.sec+' \u00b7 \u03b2'+t.beta+'</div></td>'
+     +'<td style="text-align:right;font-size:11px">'+(t.px!=null?"$"+t.px:'<span style="color:'+C.dim+'">n.d.</span>')+'</td>'
+     +'<td style="text-align:right;font-size:11px;color:'+chgCol(t.chg)+'">'+(t.chg!=null?(t.chg>=0?"+":"")+t.chg+"%":"\u2014")+'</td>'
+     +'<td style="text-align:right;font-size:9px;color:'+C.dim+'">'+fmtVol(t.vol)+'</td>'
+     +'<td><span class="tag" style="color:'+dc+';border-color:'+dc+'55">'+t.dir+'</span></td>'
+     +'<td style="text-align:right;font-size:10px;color:'+C.amb+'">-'+t.stoppct+'%</td></tr>';
+  });
+  h+='</tbody></table></div><div class="note">Prezzi e variazioni Stooq (EOD/ritardati). <b>STOP</b> = distanza % sotto il prezzo, calibrata sul beta. Esecuzione e prezzi precisi sul book Sella.</div></div>';
+
+  // 5) NEWS
+  if(D.news){
+    h+='<div class="card"><h2>\u2463 News \u2014 macro</h2>';
+    (D.news.macro||[]).forEach(function(n){h+=newsRow(n);});
+    if(!(D.news.macro||[]).length)h+='<div class="note">Nessuna news macro recuperata in questo giro.</div>';
+    h+='</div>';
+    var keys=Object.keys(D.news.titoli||{});
+    if(keys.length){
+      h+='<div class="card"><h2>\u2463 News \u2014 sui titoli in movimento</h2>';
+      keys.forEach(function(k){
+        h+='<div style="margin-top:6px"><div style="font-family:var(--mono);font-size:11px;font-weight:700;color:#e8e8e8;margin-bottom:2px">'+k+'</div>';
+        (D.news.titoli[k]||[]).forEach(function(n){h+=newsRow(n);});
+        h+='</div>';
+      });
+      h+='</div>';
+    }
+  }
+
+  // 6) BUSSOLA
+  h+='<div class="card" style="border-color:#2a2a12"><h2 style="color:'+C.amb+'">\u2464 La bussola \u2014 regole fisse</h2>'
    +'<div style="font-size:11px;color:#d8d8dc;line-height:1.7">'
    +'\u2022 Cuscinetto 6 mesi separato prima di nuovi rischi.<br>'
    +'\u2022 Ridurre \u03b2 verso 1,3-1,5 coi nuovi flussi (auto = motore non-AI).<br>'
-   +'\u2022 Stop larghi sul beta, ancorati sotto i supporti. Trailing: alza, mai abbassa.<br>'
+   +'\u2022 Stop larghi sul beta. Trailing: alza, mai abbassa.<br>'
    +'\u2022 Leva e pre-IPO congelate finche cuscinetto e diversificazione non completi.<br>'
    +'\u2022 L\'asticella e SMH, non lo zero.</div></div>';
 
-  h+='<div class="foot">Catena Macro\u2192Portafoglio \u00b7 dati Stooq via GitHub Actions \u00b7 non e consulenza finanziaria.<br>Prezzi/P&L sul book Sella \u00b7 news su Investing.com.</div>';
+  h+='<div class="foot">Macro\u2192Portafoglio \u00b7 Stooq + Google News via GitHub Actions \u00b7 non e consulenza.<br>Prezzi/esecuzione: Sella.</div>';
   document.getElementById("app").innerHTML=h;
+}
+
+function newsRow(n){
+  return '<a class="nw" href="'+esc(n.link)+'" target="_blank" rel="noopener">'
+   +'<div style="font-size:11px;color:#d8d8dc;line-height:1.4">'+esc(n.t)+'</div>'
+   +'<div style="font-size:8.5px;color:'+C.dim+';margin-top:2px">'+esc(n.src)+(n.when?' \u00b7 '+esc(n.when):'')+'</div></a>';
 }
 
 fetch("data.json?"+Date.now())
   .then(function(r){if(!r.ok)throw new Error("data.json non trovato (HTTP "+r.status+")");return r.json();})
   .then(render)
-  .catch(function(e){document.getElementById("app").innerHTML='<div style="color:#ffb02e;padding:24px;font-size:13px;line-height:1.6"><b>Dati non ancora disponibili.</b><br><br>'+esc(e.message)+'<br><br>Se hai appena creato il repo: vai su Actions e lancia "Run workflow" una volta per generare il primo data.json.</div>';});
+  .catch(function(e){document.getElementById("app").innerHTML='<div style="color:#ffb02e;padding:24px;font-size:13px;line-height:1.6"><b>Dati non ancora disponibili.</b><br><br>'+esc(e.message)+'<br><br>Vai su Actions e lancia "Run workflow" una volta.</div>';});
 </script>
 </body>
 </html>
