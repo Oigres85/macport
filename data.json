@@ -1,0 +1,175 @@
+{
+  "updated": "2026-06-04 09:51 UTC",
+  "drivers": [
+    {
+      "k": "US10Y",
+      "val": "n.d.",
+      "pos": 50,
+      "stato": "n.d.",
+      "chg": null,
+      "fresh": false
+    },
+    {
+      "k": "PETROLIO",
+      "val": "$94",
+      "pos": 75,
+      "stato": "AVVERSO",
+      "chg": -1.7,
+      "fresh": true
+    },
+    {
+      "k": "BITCOIN",
+      "val": "$62.9k",
+      "pos": 80,
+      "stato": "AVVERSO",
+      "chg": -4.2,
+      "fresh": true
+    },
+    {
+      "k": "EUR/USD",
+      "val": "1.163",
+      "pos": 60,
+      "stato": "AVVERSO LIEVE",
+      "chg": 0.2,
+      "fresh": true
+    },
+    {
+      "k": "VIX",
+      "val": "n.d.",
+      "pos": 50,
+      "stato": "n.d.",
+      "chg": null,
+      "fresh": false
+    },
+    {
+      "k": "TAIWAN / SEMI",
+      "val": "-0.5%",
+      "pos": 25,
+      "stato": "FAVOREVOLE",
+      "chg": -0.5,
+      "fresh": true
+    }
+  ],
+  "titoli": [
+    {
+      "t": "NVDA",
+      "sec": "SEMI",
+      "beta": 1.45,
+      "chg": -3.1,
+      "fresh": true,
+      "exp": {
+        "US10Y": 0,
+        "PETROLIO": -1,
+        "BITCOIN": 0,
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": 2
+      }
+    },
+    {
+      "t": "AMD",
+      "sec": "SEMI",
+      "beta": 2.0,
+      "chg": 1.6,
+      "fresh": true,
+      "exp": {
+        "US10Y": 0,
+        "PETROLIO": -1,
+        "BITCOIN": 0,
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": 2
+      }
+    },
+    {
+      "t": "MU",
+      "sec": "SEMI",
+      "beta": 1.5,
+      "chg": 0.1,
+      "fresh": true,
+      "exp": {
+        "US10Y": 0,
+        "PETROLIO": -1,
+        "BITCOIN": 0,
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": 2
+      }
+    },
+    {
+      "t": "INTC",
+      "sec": "SEMI",
+      "beta": 1.1,
+      "chg": -3.2,
+      "fresh": true,
+      "exp": {
+        "US10Y": 0,
+        "PETROLIO": -1,
+        "BITCOIN": 0,
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": 1
+      }
+    },
+    {
+      "t": "TSLA",
+      "sec": "AUTO",
+      "beta": 2.0,
+      "chg": 1.2,
+      "fresh": true,
+      "exp": {
+        "US10Y": 0,
+        "PETROLIO": -2,
+        "BITCOIN": 0,
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": 0
+      }
+    },
+    {
+      "t": "MSTR",
+      "sec": "CRYPTO",
+      "beta": 2.42,
+      "chg": -5.9,
+      "fresh": true,
+      "exp": {
+        "US10Y": 0,
+        "PETROLIO": 0,
+        "BITCOIN": -2,
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": 0
+      }
+    },
+    {
+      "t": "RGTI",
+      "sec": "QUANTUM",
+      "beta": 3.0,
+      "chg": -9.3,
+      "fresh": true,
+      "exp": {
+        "US10Y": 0,
+        "PETROLIO": -1,
+        "BITCOIN": 0,
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": 1
+      }
+    },
+    {
+      "t": "ARBE",
+      "sec": "RADAR",
+      "beta": 2.0,
+      "chg": -4.4,
+      "fresh": true,
+      "exp": {
+        "US10Y": 0,
+        "PETROLIO": 0,
+        "BITCOIN": 0,
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": 0
+      }
+    }
+  ]
+}
