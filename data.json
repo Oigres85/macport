@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04 19:27 UTC",
+  "updated": "2026-06-04 21:48 UTC",
   "drivers": [
     {
       "k": "US10Y",
@@ -14,15 +14,15 @@
       "val": "$93",
       "pos": 75,
       "stato": "AVVERSO",
-      "chg": -2.7,
+      "chg": -3.0,
       "fresh": true
     },
     {
       "k": "BITCOIN",
-      "val": "$64.0k",
+      "val": "$63.4k",
       "pos": 80,
       "stato": "AVVERSO",
-      "chg": -2.5,
+      "chg": -3.4,
       "fresh": true
     },
     {
@@ -35,18 +35,18 @@
     },
     {
       "k": "VIX",
-      "val": "vol -3.1%",
+      "val": "vol -5.2%",
       "pos": 32,
       "stato": "FAVOREVOLE (vol calo)",
-      "chg": -3.1,
+      "chg": -5.2,
       "fresh": true
     },
     {
       "k": "TAIWAN / SEMI",
-      "val": "+3.0%",
+      "val": "+2.5%",
       "pos": 25,
       "stato": "FAVOREVOLE",
-      "chg": 3.0,
+      "chg": 2.5,
       "fresh": true
     }
   ],
@@ -59,9 +59,9 @@
       "hz": "LUNGO",
       "conv": "alta",
       "stoppct": 18,
-      "px": 221.08,
-      "chg": 3.4,
-      "vol": 87715125,
+      "px": 218.69,
+      "chg": 2.2,
+      "vol": 168049751,
       "fresh": true,
       "exp": {
         "US10Y": -2,
@@ -80,9 +80,9 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 526.0,
-      "chg": 2.2,
-      "vol": 14478352,
+      "px": 523.2,
+      "chg": 1.6,
+      "vol": 28970185,
       "fresh": true,
       "exp": {
         "US10Y": -1,
@@ -101,9 +101,9 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 18,
-      "px": 1013.18,
-      "chg": 0.6,
-      "vol": 30998117,
+      "px": 997.17,
+      "chg": -1.0,
+      "vol": 53781207,
       "fresh": true,
       "exp": {
         "US10Y": -2,
@@ -122,9 +122,9 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 14,
-      "px": 112.34,
-      "chg": 3.6,
-      "vol": 46456479,
+      "px": 111.8,
+      "chg": 3.1,
+      "vol": 76833497,
       "fresh": true,
       "exp": {
         "US10Y": -1,
@@ -143,9 +143,9 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 419.9,
-      "chg": 0.0,
-      "vol": 22010712,
+      "px": 418.45,
+      "chg": -0.3,
+      "vol": 35098827,
       "fresh": true,
       "exp": {
         "US10Y": -1,
@@ -164,9 +164,9 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 29,
-      "px": 130.13,
-      "chg": 2.7,
-      "vol": 11846025,
+      "px": 129.32,
+      "chg": 2.0,
+      "vol": 24505185,
       "fresh": true,
       "exp": {
         "US10Y": -1,
@@ -185,9 +185,9 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 34,
-      "px": 24.14,
+      "px": 24.16,
       "chg": 3.3,
-      "vol": 32075872,
+      "vol": 47849312,
       "fresh": true,
       "exp": {
         "US10Y": -2,
@@ -206,9 +206,9 @@
       "hz": "BREVISSIMO",
       "conv": "bassa",
       "stoppct": 23,
-      "px": 1.11,
-      "chg": 5.2,
-      "vol": 2368355,
+      "px": 1.07,
+      "chg": 1.0,
+      "vol": 3561629,
       "fresh": true,
       "exp": {
         "US10Y": -1,
@@ -242,18 +242,18 @@
       }
     ],
     "titoli": {
-      "ARBE": [
+      "RGTI": [
         {
-          "t": "Arbe Robotics completa un’offerta pubblica di azioni ordinarie da 18,5 milioni di dollari",
-          "src": "Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOHlpVE02Uy1RUW5UY0NueVJnUEdqV193UzBSN0l2WGx1cV9rVHNITHAwTVFZaE94TWhoV2tnOWZtRkkyVjdMaVM4Q2ZhdXY2a2l1RFdWU29XcFA3YVlEbmxHWUpTVVB2RktjeEpRYnYydjZkemR6U19CaUtIWGFfQTlmSzQ3UkJvMGJjMVpmdzZHeERFdWZ6RTYwakowaWRRa2VwMzRJNnVucUZUU0ZkOFc4dEw1aVRtaE9TZ0NUY3hfazgzeXFrR0FyQTQ0RnI2aUZxdjd5TWVTVkk?oc=5",
-          "when": "27/01 08:00"
+          "t": "Calcolo Quantistico - Rigetti Computing supera le stime di fatturato",
+          "src": "Websim",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSUdCQWZZck9jRWV4cDNpeWl4NjctM3JaNVdpeEF1OVo4Uzhoc3g0YklyalFLSXpXNDVIR1Y5TC1ZVnFkemFsNmZqbllPWXZMOTV2ak9ZaUVySzI5SEtVZkxhTDhyRDM4QWo0MlZfMDQ3T3RMLVBzV3hIN2NwRnZKQzJkTmcwSXJTOWNDOFRWeHJyVlpCQjlfTWpsUW0zam4xSFE1T2VoOGM?oc=5",
+          "when": "04/06 08:45"
         },
         {
-          "t": "ARBE prezzo azionario | Prezzo target dell'analista 1.50 e Consenso",
-          "src": "eToro",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95Xy0xcmwwMFNwTjI2bkozVDUyMEJ6N1YyQTlHdHVEWWU5S2RxUExJQTlOX2lkaXZCOFhFY2JISDhJb3hmQ3dySDZDa2ludw?oc=5",
-          "when": "08/07 02:22"
+          "t": "Il CTO di Rigetti Computing David Rivas vende azioni RGTI per $12,68 mln",
+          "src": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSTc4aXpvTERzbzFuNlpGMzNqTFo5MFRSWTVqRzdHOUVkZGdVSVg1Y3VIRUNCNVE3VmZKVmhaTXRfRU4yRldYRVNRR2JEQ2k0R0szZUFKcDI0bDM2SHNJSGJiVnRyUjFTMDVGdHlsR2V1RUVKeWhwNFExUE9ody1qZ3hGdHNhVDFKMnViMHI3VmZrcUdLaFo1d0dfaW15aFZKdl9IZ3hsckppVGM0eTB6blFnTXdxLW96UDd2cV9weXhRLUNNSmgxT3daT3lJWUU?oc=5",
+          "when": "01/06 20:20"
         }
       ],
       "INTC": [
@@ -281,7 +281,7 @@
           "t": "Azioni NVIDIA: presentazione chip RTX Spark PC, utili Q1",
           "src": "Capital.com",
           "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4wSG04LUJCelZkamVlTTAwbnZLS05wWG54QVdMZlFaWkJPRTRlaGhZaWR6UnNBbURWZVpxYllwREhOSkxXZ1RIS3E4TmxpUV9wSnIxUGttc3l6RjB6X0NXV0Y4SFBkSGtVN1REazVZekVPZzlNY3lmRnQ0UXdTZw?oc=5",
-          "when": "04/06 09:31"
+          "when": "04/06 09:32"
         }
       ]
     }
