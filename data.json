@@ -1,45 +1,45 @@
 {
-  "updated": "2026-06-04 09:51 UTC",
+  "updated": "2026-06-04 11:41 UTC",
   "drivers": [
     {
       "k": "US10Y",
-      "val": "n.d.",
-      "pos": 50,
-      "stato": "n.d.",
-      "chg": null,
-      "fresh": false
+      "val": "rend. ↓",
+      "pos": 28,
+      "stato": "FAVOREVOLE",
+      "chg": 0.0,
+      "fresh": true
     },
     {
       "k": "PETROLIO",
       "val": "$94",
       "pos": 75,
       "stato": "AVVERSO",
-      "chg": -1.7,
+      "chg": -2.3,
       "fresh": true
     },
     {
       "k": "BITCOIN",
-      "val": "$62.9k",
+      "val": "$62.2k",
       "pos": 80,
       "stato": "AVVERSO",
-      "chg": -4.2,
+      "chg": -5.3,
       "fresh": true
     },
     {
       "k": "EUR/USD",
-      "val": "1.163",
+      "val": "1.164",
       "pos": 60,
       "stato": "AVVERSO LIEVE",
-      "chg": 0.2,
+      "chg": 0.4,
       "fresh": true
     },
     {
       "k": "VIX",
-      "val": "n.d.",
-      "pos": 50,
-      "stato": "n.d.",
-      "chg": null,
-      "fresh": false
+      "val": "vol -0.5%",
+      "pos": 32,
+      "stato": "FAVOREVOLE (vol calo)",
+      "chg": -0.5,
+      "fresh": true
     },
     {
       "k": "TAIWAN / SEMI",
@@ -55,14 +55,20 @@
       "t": "NVDA",
       "sec": "SEMI",
       "beta": 1.45,
+      "dir": "CORE",
+      "hz": "LUNGO",
+      "conv": "alta",
+      "stoppct": 18,
+      "px": 214.75,
       "chg": -3.1,
+      "vol": 160907001,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": 2,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
-        "VIX": 0,
+        "VIX": 1,
         "TAIWAN / SEMI": 2
       }
     },
@@ -70,14 +76,20 @@
       "t": "AMD",
       "sec": "SEMI",
       "beta": 2.0,
+      "dir": "TRIM",
+      "hz": "MEDIO",
+      "conv": "media",
+      "stoppct": 23,
+      "px": 542.52,
       "chg": 1.6,
+      "vol": 29411149,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": 1,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
-        "VIX": 0,
+        "VIX": 2,
         "TAIWAN / SEMI": 2
       }
     },
@@ -85,14 +97,20 @@
       "t": "MU",
       "sec": "SEMI",
       "beta": 1.5,
+      "dir": "HOLD",
+      "hz": "MEDIO",
+      "conv": "media",
+      "stoppct": 18,
+      "px": 1079.57,
       "chg": 0.1,
+      "vol": 40324175,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": 2,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
-        "VIX": 0,
+        "VIX": 1,
         "TAIWAN / SEMI": 2
       }
     },
@@ -100,14 +118,20 @@
       "t": "INTC",
       "sec": "SEMI",
       "beta": 1.1,
+      "dir": "HOLD-STOP",
+      "hz": "BREVE",
+      "conv": "bassa",
+      "stoppct": 14,
+      "px": 112.71,
       "chg": -3.2,
+      "vol": 118928807,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": 1,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
-        "VIX": 0,
+        "VIX": 1,
         "TAIWAN / SEMI": 1
       }
     },
@@ -115,14 +139,20 @@
       "t": "TSLA",
       "sec": "AUTO",
       "beta": 2.0,
+      "dir": "HOLD",
+      "hz": "MEDIO",
+      "conv": "media",
+      "stoppct": 23,
+      "px": 423.7,
       "chg": 1.2,
+      "vol": 44500733,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": 1,
         "PETROLIO": -2,
         "BITCOIN": 0,
         "EUR/USD": -1,
-        "VIX": 0,
+        "VIX": 2,
         "TAIWAN / SEMI": 0
       }
     },
@@ -130,14 +160,20 @@
       "t": "MSTR",
       "sec": "CRYPTO",
       "beta": 2.42,
+      "dir": "HOLD-STOP",
+      "hz": "BREVE",
+      "conv": "bassa",
+      "stoppct": 29,
+      "px": 126.55,
       "chg": -5.9,
+      "vol": 21141778,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": 1,
         "PETROLIO": 0,
         "BITCOIN": -2,
         "EUR/USD": -1,
-        "VIX": 0,
+        "VIX": 2,
         "TAIWAN / SEMI": 0
       }
     },
@@ -145,14 +181,20 @@
       "t": "RGTI",
       "sec": "QUANTUM",
       "beta": 3.0,
+      "dir": "HOLD-STOP",
+      "hz": "BREVE",
+      "conv": "bassa",
+      "stoppct": 34,
+      "px": 24.09,
       "chg": -9.3,
+      "vol": 78372493,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": 2,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
-        "VIX": 0,
+        "VIX": 2,
         "TAIWAN / SEMI": 1
       }
     },
@@ -160,16 +202,88 @@
       "t": "ARBE",
       "sec": "RADAR",
       "beta": 2.0,
+      "dir": "SELL",
+      "hz": "BREVISSIMO",
+      "conv": "bassa",
+      "stoppct": 23,
+      "px": 1.08,
       "chg": -4.4,
+      "vol": 4291630,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": 1,
         "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": -1,
-        "VIX": 0,
+        "VIX": 2,
         "TAIWAN / SEMI": 0
       }
     }
-  ]
+  ],
+  "news": {
+    "macro": [
+      {
+        "t": "Borse, Wall Street peggiora dopo lo status quo della Fed: -1,64%. Milano -0,3%",
+        "src": "Il Sole 24 ORE",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObjdlUUNlT051MGVjX29WM3FjcHlDejZGd09ILUZnQUQwdFVCNy1Fb3Z1NVdMaGNGNTVXZE5uX1paNE1tVUIzQl96c0NnRWVyaWt1eWdlQ1JJaEwwOHlxUkFGNk9lRWZHVXlHUGNrZDBINXlfUEVfQXlIdGx2VlY5X2JpOXpLWjA4S21mNEJLQ0RpUzlqM2Y2WnI3OUFyZ1dpU2xnQnUwcmRESkQ3Z2c?oc=5",
+        "when": "18/03 07:00"
+      },
+      {
+        "t": "La diretta da Wall Street | Le borse Usa chiudono deboli: Dow Jones +0,02%, Nasdaq +0,17% e S&P 500 -0,01%",
+        "src": "Milano Finanza",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOSEtyM1FqQnN4emozY2E0Ti11elVqVFVZOFNvUVZEQ0xvRnhUOEZnamdFMWdQRnUySkRCUHhhdklKMExBMm4wbUFaZmd6VjI2b3pHMUxxYkZLanpyM0V0NzNfalJ3UFRmYXZuMnZRcEotSVR1N0otMnhPSUFKNTJkcGZZdHVXY3d1ZndVRHpKTzlVQjNYY2Nsc2ZPeU01YnRiYVpaTkNPQzJtSV9FZWs1emlubzRURmxLSTl5bTRxZVlVYmNUZmNDWGZrNDRTVGZTTnkwbFJ6REtpTV9XaWlDM2FsY0dGRTRiTjBqVXJvMHo?oc=5",
+        "when": "28/01 08:00"
+      },
+      {
+        "t": "Borsa: positive Europa e Wall Street, a Milano corrono gli energetici e le utility",
+        "src": "RaiNews",
+        "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPQWhuYjUxYlVzUnlmYTJKQ0tTR2hHLTNkNy1HS3J0OUYtMmpsQjFGY0Zwb3RyOHBXbkFwUjllajNaTExmbHlZX0hWeGR1VktxeHc4QlJiN3JpODVFbzh6VTJTRVpDZ01haHNwR3pfaFRtZllZeFlieWVfV3VhTjM1NzJrM0NXQ0lzdU02Z29qZGlBY2hnRGtZRnhUSGRkemZEUy03S2NuWkpBeGtsemtvRGNTQklwWEhWeXhQc3JPN0ZMZmNQNU5oN2VVaFY3T2RGeTgtaDVYOWotLTJrS3JIN25pZHR2TDU0aU9YdnFUd3lNUC1pVkJSVHFYM1lIUXFyYy1WcVFOQdIBjAJBVV95cUxPZE1yZFpBRUxwZkdzV2N1REF0azUyZFRrcHItQk8yWWVLa1F3SW1GU1NtSWNFTnQxQUVDWFppQ1dyZU51bWg1VElCRHRTYkVWNW5kYm9IMmhsWDZnVEF5NzBwUWZGeHpBMDZFeEdZQnlkVXd2OU8yRmMwUzFldFdsMWJ0bTRzdXdib3R4UE15OERGcS1WQW5FdjZTcHRIQXhGbkFsOVdsdGtmcDV5dk9WcU5VbDZDeEF3MFV4T2tvUURmRElHTGZ1NWZmQzFQbzZVVmNVMlgtZUVtV2xReEJqUmJkS3BiOEppYVk3QjJpajRaX3NjMmdDbDZYc0tzRUEyY1dfVExiQkVBdlAy?oc=5",
+        "when": "17/03 07:00"
+      }
+    ],
+    "titoli": {
+      "RGTI": [
+        {
+          "t": "Calcolo Quantistico - Rigetti Computing supera le stime di fatturato",
+          "src": "Websim",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSUdCQWZZck9jRWV4cDNpeWl4NjctM3JaNVdpeEF1OVo4Uzhoc3g0YklyalFLSXpXNDVIR1Y5TC1ZVnFkemFsNmZqbllPWXZMOTV2ak9ZaUVySzI5SEtVZkxhTDhyRDM4QWo0MlZfMDQ3T3RMLVBzV3hIN2NwRnZKQzJkTmcwSXJTOWNDOFRWeHJyVlpCQjlfTWpsUW0zam4xSFE1T2VoOGM?oc=5",
+          "when": "04/06 08:45"
+        },
+        {
+          "t": "Il CTO di Rigetti Computing David Rivas vende azioni RGTI per $12,68 mln",
+          "src": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSTc4aXpvTERzbzFuNlpGMzNqTFo5MFRSWTVqRzdHOUVkZGdVSVg1Y3VIRUNCNVE3VmZKVmhaTXRfRU4yRldYRVNRR2JEQ2k0R0szZUFKcDI0bDM2SHNJSGJiVnRyUjFTMDVGdHlsR2V1RUVKeWhwNFExUE9ody1qZ3hGdHNhVDFKMnViMHI3VmZrcUdLaFo1d0dfaW15aFZKdl9IZ3hsckppVGM0eTB6blFnTXdxLW96UDd2cV9weXhRLUNNSmgxT3daT3lJWUU?oc=5",
+          "when": "01/06 20:20"
+        }
+      ],
+      "MSTR": [
+        {
+          "t": "Gli esperti avvertono che Bitcoin ha un problema Microstrategy mentre BTC e il titolo MSTR scendono",
+          "src": "Yahoo Finanza",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORmxicmh5WHptdFczREdob2JXMkM1c1FNdzhxeVJsamdHUWI0emhvNURpT0VSNHRDQzFncEQ3aEd5QXhfYjBUOUc4TFFCM3BMazVmbHJpRzFxU3g4R3N0TV84QTYwc3VneVBiNk5WVGZZU2JCTTdVX2pfLXNjV0ZPanBjRjctSGxXcC1tdUh3?oc=5",
+          "when": "02/06 21:06"
+        },
+        {
+          "t": "STRC scende sotto $97 mentre la recente vendita di Bitcoin mette in discussione la macchina di raccolta capitali di Microstrategy",
+          "src": "Yahoo Finanza",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPR0ZsVjJ4QlR2MDVxSTdTelhNTW14N0VsSVN5QTN1SzFpYUZzdklvYW5JbF9sLXpBLTlSNTNVR1YtbUhtNVMxdC1uT2VMYmZCUmZtNVpkYWVSSkZoa1BmWEJ1Qk9GSjltNjhZNVNVMXoxa080QlJRRW5uTzY5ekpZYl8yZkJMZw?oc=5",
+          "when": "03/06 11:34"
+        }
+      ],
+      "ARBE": [
+        {
+          "t": "Arbe Robotics completa un’offerta pubblica di azioni ordinarie da 18,5 milioni di dollari",
+          "src": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOHlpVE02Uy1RUW5UY0NueVJnUEdqV193UzBSN0l2WGx1cV9rVHNITHAwTVFZaE94TWhoV2tnOWZtRkkyVjdMaVM4Q2ZhdXY2a2l1RFdWU29XcFA3YVlEbmxHWUpTVVB2RktjeEpRYnYydjZkemR6U19CaUtIWGFfQTlmSzQ3UkJvMGJjMVpmdzZHeERFdWZ6RTYwakowaWRRa2VwMzRJNnVucUZUU0ZkOFc4dEw1aVRtaE9TZ0NUY3hfazgzeXFrR0FyQTQ0RnI2aUZxdjd5TWVTVkk?oc=5",
+          "when": "27/01 08:00"
+        },
+        {
+          "t": "ARBE prezzo azionario | Prezzo target dell'analista 1.50 e Consenso",
+          "src": "eToro",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95Xy0xcmwwMFNwTjI2bkozVDUyMEJ6N1YyQTlHdHVEWWU5S2RxUExJQTlOX2lkaXZCOFhFY2JISDhJb3hmQ3dySDZDa2ludw?oc=5",
+          "when": "08/07 02:22"
+        }
+      ]
+    }
+  }
 }
