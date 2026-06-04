@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-04 16:25 UTC",
+  "updated": "2026-06-04 19:27 UTC",
   "drivers": [
     {
       "k": "US10Y",
-      "val": "rend. ↓",
-      "pos": 28,
-      "stato": "FAVOREVOLE",
-      "chg": 0.0,
+      "val": "rend. ↑",
+      "pos": 75,
+      "stato": "AVVERSO",
+      "chg": -0.1,
       "fresh": true
     },
     {
@@ -14,39 +14,39 @@
       "val": "$93",
       "pos": 75,
       "stato": "AVVERSO",
-      "chg": -2.9,
+      "chg": -2.7,
       "fresh": true
     },
     {
       "k": "BITCOIN",
-      "val": "$63.8k",
+      "val": "$64.0k",
       "pos": 80,
       "stato": "AVVERSO",
-      "chg": -2.9,
+      "chg": -2.5,
       "fresh": true
     },
     {
       "k": "EUR/USD",
-      "val": "1.163",
+      "val": "1.161",
       "pos": 60,
       "stato": "AVVERSO LIEVE",
-      "chg": 0.3,
+      "chg": 0.1,
       "fresh": true
     },
     {
       "k": "VIX",
-      "val": "vol -2.3%",
+      "val": "vol -3.1%",
       "pos": 32,
       "stato": "FAVOREVOLE (vol calo)",
-      "chg": -2.3,
+      "chg": -3.1,
       "fresh": true
     },
     {
       "k": "TAIWAN / SEMI",
-      "val": "+1.5%",
+      "val": "+3.0%",
       "pos": 25,
       "stato": "FAVOREVOLE",
-      "chg": 1.5,
+      "chg": 3.0,
       "fresh": true
     }
   ],
@@ -59,12 +59,12 @@
       "hz": "LUNGO",
       "conv": "alta",
       "stoppct": 18,
-      "px": 217.32,
-      "chg": 1.6,
-      "vol": 52682988,
+      "px": 221.08,
+      "chg": 3.4,
+      "vol": 87715125,
       "fresh": true,
       "exp": {
-        "US10Y": 2,
+        "US10Y": -2,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
@@ -80,12 +80,12 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 519.85,
-      "chg": 1.0,
-      "vol": 10563052,
+      "px": 526.0,
+      "chg": 2.2,
+      "vol": 14478352,
       "fresh": true,
       "exp": {
-        "US10Y": 1,
+        "US10Y": -1,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
@@ -101,12 +101,12 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 18,
-      "px": 1005.84,
-      "chg": -0.1,
-      "vol": 21311659,
+      "px": 1013.18,
+      "chg": 0.6,
+      "vol": 30998117,
       "fresh": true,
       "exp": {
-        "US10Y": 2,
+        "US10Y": -2,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
@@ -122,12 +122,12 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 14,
-      "px": 110.42,
-      "chg": 1.9,
-      "vol": 30164948,
+      "px": 112.34,
+      "chg": 3.6,
+      "vol": 46456479,
       "fresh": true,
       "exp": {
-        "US10Y": 1,
+        "US10Y": -1,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
@@ -143,12 +143,12 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 419.55,
-      "chg": -0.1,
-      "vol": 15336415,
+      "px": 419.9,
+      "chg": 0.0,
+      "vol": 22010712,
       "fresh": true,
       "exp": {
-        "US10Y": 1,
+        "US10Y": -1,
         "PETROLIO": -2,
         "BITCOIN": 0,
         "EUR/USD": -1,
@@ -164,12 +164,12 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 29,
-      "px": 128.22,
-      "chg": 1.2,
-      "vol": 7169831,
+      "px": 130.13,
+      "chg": 2.7,
+      "vol": 11846025,
       "fresh": true,
       "exp": {
-        "US10Y": 1,
+        "US10Y": -1,
         "PETROLIO": 0,
         "BITCOIN": -2,
         "EUR/USD": -1,
@@ -185,12 +185,12 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 34,
-      "px": 24.11,
-      "chg": 3.1,
-      "vol": 17972665,
+      "px": 24.14,
+      "chg": 3.3,
+      "vol": 32075872,
       "fresh": true,
       "exp": {
-        "US10Y": 2,
+        "US10Y": -2,
         "PETROLIO": -1,
         "BITCOIN": 0,
         "EUR/USD": -1,
@@ -206,12 +206,12 @@
       "hz": "BREVISSIMO",
       "conv": "bassa",
       "stoppct": 23,
-      "px": 1.09,
-      "chg": 3.3,
-      "vol": 1493483,
+      "px": 1.11,
+      "chg": 5.2,
+      "vol": 2368355,
       "fresh": true,
       "exp": {
-        "US10Y": 1,
+        "US10Y": -1,
         "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": -1,
@@ -229,10 +229,10 @@
         "when": "17/03 07:00"
       },
       {
-        "t": "La diretta da Wall Street | Le borse Usa chiudono deboli: Dow Jones +0,02%, Nasdaq +0,17% e S&P 500 -0,01%",
+        "t": "La diretta da Wall Street | Le borse Usa chiudono positive alla vigilia della decisione della Fed sui tassi, Nasdaq +0,5%",
         "src": "Milano Finanza",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOSEtyM1FqQnN4emozY2E0Ti11elVqVFVZOFNvUVZEQ0xvRnhUOEZnamdFMWdQRnUySkRCUHhhdklKMExBMm4wbUFaZmd6VjI2b3pHMUxxYkZLanpyM0V0NzNfalJ3UFRmYXZuMnZRcEotSVR1N0otMnhPSUFKNTJkcGZZdHVXY3d1ZndVRHpKTzlVQjNYY2Nsc2ZPeU01YnRiYVpaTkNPQzJtSV9FZWs1emlubzRURmxLSTl5bTRxZVlVYmNUZmNDWGZrNDRTVGZTTnkwbFJ6REtpTV9XaWlDM2FsY0dGRTRiTjBqVXJvMHo?oc=5",
-        "when": "28/01 08:00"
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQbTZUTkpPRmpEYXhydFpSWV9JaDRmM2hrbDlMTVNmMVlxMTNSRkg3Q3V2T3FyV3ZFVWZrQ1ZCUjF0SWowUE5zbHNNcm83QV94V280Nm9fSnFfdlpfUDVVMl9iYUVLSkdjeVdtMHNEZHdnM0FxblFiT3J4ckVaTlZ0bWJ4bFlwMTgzUkMwY1FCUTh1bU1Xa05FMk4waGliV3hoSkJFUkFrRkNVU0NDSi1mQlgyazNCVjAzRHlmNFdTVjFEQ2F3RTFuMEtDNlg5SDhyNE9Sdnk0RnJVbVQ3VjdMY0ZNQQ?oc=5",
+        "when": "17/03 07:00"
       },
       {
         "t": "Borsa: positive Europa e Wall Street, a Milano corrono gli energetici e le utility",
@@ -256,20 +256,6 @@
           "when": "08/07 02:22"
         }
       ],
-      "RGTI": [
-        {
-          "t": "Calcolo Quantistico - Rigetti Computing supera le stime di fatturato",
-          "src": "Websim",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSUdCQWZZck9jRWV4cDNpeWl4NjctM3JaNVdpeEF1OVo4Uzhoc3g0YklyalFLSXpXNDVIR1Y5TC1ZVnFkemFsNmZqbllPWXZMOTV2ak9ZaUVySzI5SEtVZkxhTDhyRDM4QWo0MlZfMDQ3T3RMLVBzV3hIN2NwRnZKQzJkTmcwSXJTOWNDOFRWeHJyVlpCQjlfTWpsUW0zam4xSFE1T2VoOGM?oc=5",
-          "when": "04/06 08:45"
-        },
-        {
-          "t": "Il CTO di Rigetti Computing David Rivas vende azioni RGTI per $12,68 mln",
-          "src": "Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSTc4aXpvTERzbzFuNlpGMzNqTFo5MFRSWTVqRzdHOUVkZGdVSVg1Y3VIRUNCNVE3VmZKVmhaTXRfRU4yRldYRVNRR2JEQ2k0R0szZUFKcDI0bDM2SHNJSGJiVnRyUjFTMDVGdHlsR2V1RUVKeWhwNFExUE9ody1qZ3hGdHNhVDFKMnViMHI3VmZrcUdLaFo1d0dfaW15aFZKdl9IZ3hsckppVGM0eTB6blFnTXdxLW96UDd2cV9weXhRLUNNSmgxT3daT3lJWUU?oc=5",
-          "when": "01/06 20:20"
-        }
-      ],
       "INTC": [
         {
           "t": "Il rally del 200% delle azioni Intel si interrompe mentre Nvidia colpisce prima del keynote decisivo",
@@ -282,6 +268,20 @@
           "src": "TIKR.com",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZTBXX3g0X2RIQTNEWndjcFdUNGt3NS1Vc0lYT1NxeTY0d1h5NFNpMk1SdTZrc3FsQmRQYmtnUER3c25YZWVSeTBmcFNSUWJQY1h1SWFyQW13VkU3elU0c2pSYU0tRi1tamdKN1JRWmFUVWY5bTM1Yy1IZW41OVZKNy13OWlBc1pRYk9JaW9ERWM0Y0k?oc=5",
           "when": "04/06 13:06"
+        }
+      ],
+      "NVDA": [
+        {
+          "t": "Il rally del 200% delle azioni Intel si interrompe mentre Nvidia colpisce prima del keynote decisivo",
+          "src": "Yahoo Finanza",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1wNnlnU2VwVS05U0lyN2JteThxdGpYNDZxRHNwT0RDb0gyQjRKaEJ2VDVHS2s5VzFvRlJabVNBUXJIQjJxVkFvaERBYXdFQ0hMdFc3eXJwQk90Q1hpZVFuTHBiRkh1S3Q0dW52YUtlTTZQZU5sT2FMYXNYVnE0ZkE?oc=5",
+          "when": "01/06 20:16"
+        },
+        {
+          "t": "Azioni NVIDIA: presentazione chip RTX Spark PC, utili Q1",
+          "src": "Capital.com",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4wSG04LUJCelZkamVlTTAwbnZLS05wWG54QVdMZlFaWkJPRTRlaGhZaWR6UnNBbURWZVpxYllwREhOSkxXZ1RIS3E4TmxpUV9wSnIxUGttc3l6RjB6X0NXV0Y4SFBkSGtVN1REazVZekVPZzlNY3lmRnQ0UXdTZw?oc=5",
+          "when": "04/06 09:31"
         }
       ]
     }
