@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04 11:41 UTC",
+  "updated": "2026-06-04 16:25 UTC",
   "drivers": [
     {
       "k": "US10Y",
@@ -11,42 +11,42 @@
     },
     {
       "k": "PETROLIO",
-      "val": "$94",
+      "val": "$93",
       "pos": 75,
       "stato": "AVVERSO",
-      "chg": -2.3,
+      "chg": -2.9,
       "fresh": true
     },
     {
       "k": "BITCOIN",
-      "val": "$62.2k",
+      "val": "$63.8k",
       "pos": 80,
       "stato": "AVVERSO",
-      "chg": -5.3,
+      "chg": -2.9,
       "fresh": true
     },
     {
       "k": "EUR/USD",
-      "val": "1.164",
+      "val": "1.163",
       "pos": 60,
       "stato": "AVVERSO LIEVE",
-      "chg": 0.4,
+      "chg": 0.3,
       "fresh": true
     },
     {
       "k": "VIX",
-      "val": "vol -0.5%",
+      "val": "vol -2.3%",
       "pos": 32,
       "stato": "FAVOREVOLE (vol calo)",
-      "chg": -0.5,
+      "chg": -2.3,
       "fresh": true
     },
     {
       "k": "TAIWAN / SEMI",
-      "val": "-0.5%",
+      "val": "+1.5%",
       "pos": 25,
       "stato": "FAVOREVOLE",
-      "chg": -0.5,
+      "chg": 1.5,
       "fresh": true
     }
   ],
@@ -59,9 +59,9 @@
       "hz": "LUNGO",
       "conv": "alta",
       "stoppct": 18,
-      "px": 214.75,
-      "chg": -3.1,
-      "vol": 160907001,
+      "px": 217.32,
+      "chg": 1.6,
+      "vol": 52682988,
       "fresh": true,
       "exp": {
         "US10Y": 2,
@@ -80,9 +80,9 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 542.52,
-      "chg": 1.6,
-      "vol": 29411149,
+      "px": 519.85,
+      "chg": 1.0,
+      "vol": 10563052,
       "fresh": true,
       "exp": {
         "US10Y": 1,
@@ -101,9 +101,9 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 18,
-      "px": 1079.57,
-      "chg": 0.1,
-      "vol": 40324175,
+      "px": 1005.84,
+      "chg": -0.1,
+      "vol": 21311659,
       "fresh": true,
       "exp": {
         "US10Y": 2,
@@ -122,9 +122,9 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 14,
-      "px": 112.71,
-      "chg": -3.2,
-      "vol": 118928807,
+      "px": 110.42,
+      "chg": 1.9,
+      "vol": 30164948,
       "fresh": true,
       "exp": {
         "US10Y": 1,
@@ -143,9 +143,9 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 423.7,
-      "chg": 1.2,
-      "vol": 44500733,
+      "px": 419.55,
+      "chg": -0.1,
+      "vol": 15336415,
       "fresh": true,
       "exp": {
         "US10Y": 1,
@@ -164,9 +164,9 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 29,
-      "px": 126.55,
-      "chg": -5.9,
-      "vol": 21141778,
+      "px": 128.22,
+      "chg": 1.2,
+      "vol": 7169831,
       "fresh": true,
       "exp": {
         "US10Y": 1,
@@ -185,9 +185,9 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 34,
-      "px": 24.09,
-      "chg": -9.3,
-      "vol": 78372493,
+      "px": 24.11,
+      "chg": 3.1,
+      "vol": 17972665,
       "fresh": true,
       "exp": {
         "US10Y": 2,
@@ -206,9 +206,9 @@
       "hz": "BREVISSIMO",
       "conv": "bassa",
       "stoppct": 23,
-      "px": 1.08,
-      "chg": -4.4,
-      "vol": 4291630,
+      "px": 1.09,
+      "chg": 3.3,
+      "vol": 1493483,
       "fresh": true,
       "exp": {
         "US10Y": 1,
@@ -226,7 +226,7 @@
         "t": "Borse, Wall Street peggiora dopo lo status quo della Fed: -1,64%. Milano -0,3%",
         "src": "Il Sole 24 ORE",
         "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObjdlUUNlT051MGVjX29WM3FjcHlDejZGd09ILUZnQUQwdFVCNy1Fb3Z1NVdMaGNGNTVXZE5uX1paNE1tVUIzQl96c0NnRWVyaWt1eWdlQ1JJaEwwOHlxUkFGNk9lRWZHVXlHUGNrZDBINXlfUEVfQXlIdGx2VlY5X2JpOXpLWjA4S21mNEJLQ0RpUzlqM2Y2WnI3OUFyZ1dpU2xnQnUwcmRESkQ3Z2c?oc=5",
-        "when": "18/03 07:00"
+        "when": "17/03 07:00"
       },
       {
         "t": "La diretta da Wall Street | Le borse Usa chiudono deboli: Dow Jones +0,02%, Nasdaq +0,17% e S&P 500 -0,01%",
@@ -242,6 +242,20 @@
       }
     ],
     "titoli": {
+      "ARBE": [
+        {
+          "t": "Arbe Robotics completa un’offerta pubblica di azioni ordinarie da 18,5 milioni di dollari",
+          "src": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOHlpVE02Uy1RUW5UY0NueVJnUEdqV193UzBSN0l2WGx1cV9rVHNITHAwTVFZaE94TWhoV2tnOWZtRkkyVjdMaVM4Q2ZhdXY2a2l1RFdWU29XcFA3YVlEbmxHWUpTVVB2RktjeEpRYnYydjZkemR6U19CaUtIWGFfQTlmSzQ3UkJvMGJjMVpmdzZHeERFdWZ6RTYwakowaWRRa2VwMzRJNnVucUZUU0ZkOFc4dEw1aVRtaE9TZ0NUY3hfazgzeXFrR0FyQTQ0RnI2aUZxdjd5TWVTVkk?oc=5",
+          "when": "27/01 08:00"
+        },
+        {
+          "t": "ARBE prezzo azionario | Prezzo target dell'analista 1.50 e Consenso",
+          "src": "eToro",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95Xy0xcmwwMFNwTjI2bkozVDUyMEJ6N1YyQTlHdHVEWWU5S2RxUExJQTlOX2lkaXZCOFhFY2JISDhJb3hmQ3dySDZDa2ludw?oc=5",
+          "when": "08/07 02:22"
+        }
+      ],
       "RGTI": [
         {
           "t": "Calcolo Quantistico - Rigetti Computing supera le stime di fatturato",
@@ -256,32 +270,18 @@
           "when": "01/06 20:20"
         }
       ],
-      "MSTR": [
+      "INTC": [
         {
-          "t": "Gli esperti avvertono che Bitcoin ha un problema Microstrategy mentre BTC e il titolo MSTR scendono",
+          "t": "Il rally del 200% delle azioni Intel si interrompe mentre Nvidia colpisce prima del keynote decisivo",
           "src": "Yahoo Finanza",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORmxicmh5WHptdFczREdob2JXMkM1c1FNdzhxeVJsamdHUWI0emhvNURpT0VSNHRDQzFncEQ3aEd5QXhfYjBUOUc4TFFCM3BMazVmbHJpRzFxU3g4R3N0TV84QTYwc3VneVBiNk5WVGZZU2JCTTdVX2pfLXNjV0ZPanBjRjctSGxXcC1tdUh3?oc=5",
-          "when": "02/06 21:06"
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1wNnlnU2VwVS05U0lyN2JteThxdGpYNDZxRHNwT0RDb0gyQjRKaEJ2VDVHS2s5VzFvRlJabVNBUXJIQjJxVkFvaERBYXdFQ0hMdFc3eXJwQk90Q1hpZVFuTHBiRkh1S3Q0dW52YUtlTTZQZU5sT2FMYXNYVnE0ZkE?oc=5",
+          "when": "01/06 20:16"
         },
         {
-          "t": "STRC scende sotto $97 mentre la recente vendita di Bitcoin mette in discussione la macchina di raccolta capitali di Microstrategy",
-          "src": "Yahoo Finanza",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPR0ZsVjJ4QlR2MDVxSTdTelhNTW14N0VsSVN5QTN1SzFpYUZzdklvYW5JbF9sLXpBLTlSNTNVR1YtbUhtNVMxdC1uT2VMYmZCUmZtNVpkYWVSSkZoa1BmWEJ1Qk9GSjltNjhZNVNVMXoxa080QlJRRW5uTzY5ekpZYl8yZkJMZw?oc=5",
-          "when": "03/06 11:34"
-        }
-      ],
-      "ARBE": [
-        {
-          "t": "Arbe Robotics completa un’offerta pubblica di azioni ordinarie da 18,5 milioni di dollari",
-          "src": "Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOHlpVE02Uy1RUW5UY0NueVJnUEdqV193UzBSN0l2WGx1cV9rVHNITHAwTVFZaE94TWhoV2tnOWZtRkkyVjdMaVM4Q2ZhdXY2a2l1RFdWU29XcFA3YVlEbmxHWUpTVVB2RktjeEpRYnYydjZkemR6U19CaUtIWGFfQTlmSzQ3UkJvMGJjMVpmdzZHeERFdWZ6RTYwakowaWRRa2VwMzRJNnVucUZUU0ZkOFc4dEw1aVRtaE9TZ0NUY3hfazgzeXFrR0FyQTQ0RnI2aUZxdjd5TWVTVkk?oc=5",
-          "when": "27/01 08:00"
-        },
-        {
-          "t": "ARBE prezzo azionario | Prezzo target dell'analista 1.50 e Consenso",
-          "src": "eToro",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95Xy0xcmwwMFNwTjI2bkozVDUyMEJ6N1YyQTlHdHVEWWU5S2RxUExJQTlOX2lkaXZCOFhFY2JISDhJb3hmQ3dySDZDa2ludw?oc=5",
-          "when": "08/07 02:22"
+          "t": "Intel Stock Up 450% in 2026: Here’s What Investors Need to Know",
+          "src": "TIKR.com",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZTBXX3g0X2RIQTNEWndjcFdUNGt3NS1Vc0lYT1NxeTY0d1h5NFNpMk1SdTZrc3FsQmRQYmtnUER3c25YZWVSeTBmcFNSUWJQY1h1SWFyQW13VkU3elU0c2pSYU0tRi1tamdKN1JRWmFUVWY5bTM1Yy1IZW41OVZKNy13OWlBc1pRYk9JaW9ERWM0Y0k?oc=5",
+          "when": "04/06 13:06"
         }
       ]
     }
