@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04 21:48 UTC",
+  "updated": "2026-06-04 23:15 UTC",
   "drivers": [
     {
       "k": "US10Y",
@@ -14,15 +14,15 @@
       "val": "$93",
       "pos": 75,
       "stato": "AVVERSO",
-      "chg": -3.0,
+      "chg": 0.0,
       "fresh": true
     },
     {
       "k": "BITCOIN",
-      "val": "$63.4k",
+      "val": "$63.5k",
       "pos": 80,
       "stato": "AVVERSO",
-      "chg": -3.4,
+      "chg": 0.4,
       "fresh": true
     },
     {
@@ -30,7 +30,7 @@
       "val": "1.161",
       "pos": 60,
       "stato": "AVVERSO LIEVE",
-      "chg": 0.1,
+      "chg": 0.0,
       "fresh": true
     },
     {
@@ -264,10 +264,10 @@
           "when": "01/06 20:16"
         },
         {
-          "t": "Intel Stock Up 450% in 2026: Here’s What Investors Need to Know",
-          "src": "TIKR.com",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZTBXX3g0X2RIQTNEWndjcFdUNGt3NS1Vc0lYT1NxeTY0d1h5NFNpMk1SdTZrc3FsQmRQYmtnUER3c25YZWVSeTBmcFNSUWJQY1h1SWFyQW13VkU3elU0c2pSYU0tRi1tamdKN1JRWmFUVWY5bTM1Yy1IZW41OVZKNy13OWlBc1pRYk9JaW9ERWM0Y0k?oc=5",
-          "when": "04/06 13:06"
+          "t": "Azioni Intel: gli analisti alzano la stima del fair value per la crescita del mercato delle CPU per server",
+          "src": "Morningstar",
+          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZ1BEc1otbXlKeGVhTHlNTGpXV1JuU0dvVDdoWjBpRlQ4YkdUVDk2amhOR3UzdTRrVEk5bllVOHQybEdZekl5M2tpODBpcGE0dHV2X1V6T0w4VXpVdEpncVJBalplTHlTb2ZRN3RJR3dCbkVMTjZjNm1vZXpXdG1sNm5GUE96cWhYSU1XQXlOVjlBZHVxWHd1dWFWZk12OTl0LXREYmMzbUZ5MW40U25NT0prRTQ2UEZfdy03T3cwNEpfengyeTNKV0x4Smh4S3ZGTVRBZGJudkZraGNScXk4?oc=5",
+          "when": "08/05 07:00"
         }
       ],
       "NVDA": [
