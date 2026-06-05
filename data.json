@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05 19:01 UTC",
+  "updated": "2026-06-05 21:39 UTC",
   "drivers": [
     {
       "k": "US10Y",
@@ -19,10 +19,10 @@
     },
     {
       "k": "BITCOIN",
-      "val": "$59.2k",
+      "val": "$60.4k",
       "pos": 80,
       "stato": "AVVERSO",
-      "chg": -6.3,
+      "chg": -4.5,
       "fresh": true
     },
     {
@@ -59,9 +59,9 @@
       "hz": "LUNGO",
       "conv": "alta",
       "stoppct": 18,
-      "px": 205.17,
-      "chg": -4.3,
-      "vol": 97841508,
+      "px": 205.1,
+      "chg": -4.4,
+      "vol": 217522551,
       "fresh": true,
       "exp": {
         "US10Y": 0,
@@ -80,10 +80,10 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 466.0,
-      "chg": -6.7,
-      "vol": 17312901,
-      "fresh": true,
+      "px": null,
+      "chg": null,
+      "vol": null,
+      "fresh": false,
       "exp": {
         "US10Y": 0,
         "PETROLIO": 0,
@@ -143,10 +143,10 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 391.16,
-      "chg": -7.0,
-      "vol": 34960411,
-      "fresh": true,
+      "px": null,
+      "chg": null,
+      "vol": null,
+      "fresh": false,
       "exp": {
         "US10Y": 0,
         "PETROLIO": 0,
@@ -164,9 +164,9 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 29,
-      "px": 114.87,
-      "chg": -7.5,
-      "vol": 18505959,
+      "px": 120.57,
+      "chg": -3.0,
+      "vol": 41497564,
       "fresh": true,
       "exp": {
         "US10Y": 0,
@@ -185,10 +185,10 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 34,
-      "px": 20.16,
-      "chg": -13.0,
-      "vol": 31731112,
-      "fresh": true,
+      "px": null,
+      "chg": null,
+      "vol": null,
+      "fresh": false,
       "exp": {
         "US10Y": 0,
         "PETROLIO": 0,
@@ -242,18 +242,18 @@
       }
     ],
     "titoli": {
-      "RGTI": [
+      "NVDA": [
         {
-          "t": "Il CTO di Rigetti Computing David Rivas vende azioni RGTI per $12,68 mln",
-          "src": "Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSTc4aXpvTERzbzFuNlpGMzNqTFo5MFRSWTVqRzdHOUVkZGdVSVg1Y3VIRUNCNVE3VmZKVmhaTXRfRU4yRldYRVNRR2JEQ2k0R0szZUFKcDI0bDM2SHNJSGJiVnRyUjFTMDVGdHlsR2V1RUVKeWhwNFExUE9ody1qZ3hGdHNhVDFKMnViMHI3VmZrcUdLaFo1d0dfaW15aFZKdl9IZ3hsckppVGM0eTB6blFnTXdxLW96UDd2cV9weXhRLUNNSmgxT3daT3lJWUU?oc=5",
-          "when": "01/06 20:20"
+          "t": "Il settore dei chip AI vola senza Nvidia e i flussi di denaro spiegano il motivo",
+          "src": "Yahoo Finanza",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5RQ1RBTzZBMXl6WjZyWWFyNlpYQy1YRDdLOExKb2d4V01fRzh6b3hmYzhaS29jRzVlT3JaYnRTclp4VkJGSUtkMXFGRkxQVUVvQ0RHel8ycU5ab01pLVFMbmJQVEVQQkRxcFJYVjNBcU4xaEtwd3ZKbkV5a0lTNnM?oc=5",
+          "when": "05/06 18:35"
         },
         {
-          "t": "Calcolo Quantistico - Rigetti Computing supera le stime di fatturato",
-          "src": "Websim",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSUdCQWZZck9jRWV4cDNpeWl4NjctM3JaNVdpeEF1OVo4Uzhoc3g0YklyalFLSXpXNDVIR1Y5TC1ZVnFkemFsNmZqbllPWXZMOTV2ak9ZaUVySzI5SEtVZkxhTDhyRDM4QWo0MlZfMDQ3T3RMLVBzV3hIN2NwRnZKQzJkTmcwSXJTOWNDOFRWeHJyVlpCQjlfTWpsUW0zam4xSFE1T2VoOGM?oc=5",
-          "when": "04/06 08:45"
+          "t": "Insider Nvidia vende azioni per un valore di 3.343.863 dollari, secondo l'ultimo deposito SEC",
+          "src": "MarketScreener Italia",
+          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMnpRZi1aTzJVWnJHNGRsakFrS2tGZGlUeVFWTUtFclIzMDBDLWc3ZWRyRDV2eHFJM19EZEhLTWNQSjBXdXlPY0Q3MG5qMjFHaG5wTmtXWXNQZkw4UTljR25meXVaUVBSSVFOOWVXdk14NDZRUEtEQ3dMRlJjcFdCdHhvM0V4eVVqU29QQ0lVeHdWb2Z0TFVEZ201NFU2UE96WmtSQTk4U0NPcGMwSUg2N19aeDZ0alJRY2Vob1JYUUh1bTcxSmFfa2tNSjBtNDlkdnA1Y3pZcE9GRFZjLWw0cQ?oc=5",
+          "when": "05/06 21:22"
         }
       ],
       "MSTR": [
@@ -264,24 +264,10 @@
           "when": "02/06 21:06"
         },
         {
-          "t": "Jim Cramer suggerisce che Michael Saylor “ha ucciso Bitcoin” mentre Microstrategy naviga in un mare di FUD",
-          "src": "Yahoo Finanza",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVXhVNkRNbUwtOVl4WUF5N0FPdXMxbFVaZkJmNjBsM2RVeUpjRVQyN2Vta01iVEdoOUxTTHFQN0t2ZzVSbGRQZkJvdlptYm1iWXhrZDNrX01BWTQxWmxQVEF6NG9wTzZrQlJmWFRPOXhRX2RvY3d3OXdIY2VBN0poamhFenpVUHduTXA4dGJn?oc=5",
-          "when": "04/06 22:00"
-        }
-      ],
-      "TSLA": [
-        {
-          "t": "Tesla, Jp Morgan cambia rotta: target price triplicato",
-          "src": "orafinanza.it",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdnBCaDREV2xvMU9kcWowdlh0d2ppSU1FS3puOEJpSmxvN05jeldLU2ljc2QteEVzQlRSd25Lblg0YnNsOTRkOW5ETTQxelRPS1YteUlXTy1uTUN3NU5oXzR5emUteHFYNURORmNBQklVNDNhblJjSXRuVXFGZVlKbnU3MHZxR1NDVTVTYzFrNG1fQQ?oc=5",
-          "when": "04/06 23:45"
-        },
-        {
-          "t": "IPO di SpaceX: c’è il rischio di politiche poco favorevoli per gli azionisti",
-          "src": "Morningstar",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYjFsY193U2V2TVF0U1JZdC05RUstQ1VfYVpqRjducTRBVk1Qc0VRRU9TcGtuNU9uVXhaMWVyM29qMzc3dGxSc3NiNlZLRkpzOGc0TzJFRHFqUmdxQ3RRZm9WLVpldlJOWXRqakFYZU1wSzhDSmg4TlFtTHRORFNNRFNpWWRNYzhBNWRRMkJsX0Yzc3VGMHhSUzZ0N2dEeFAtV2pzcVVCUDc3a2x4Z3hzVEdyUWw?oc=5",
-          "when": "01/06 13:43"
+          "t": "MicroStrategy e Coinbase in calo sulla scia del ribasso del Bitcoin",
+          "src": "MarketScreener Italia",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQU9UNEkzbldtcGRQX2hFdWRMV0dtUmwtRnZ4aTE2anJrOURqRVJSSG9xY1IyYmVQOEh0MWNYdVVkaEZlZGZzd29PaklNaVNaZ0dnMVNvY2F5ZU1wWlpXLWE5N3czMWt3T19RWVc2LUNsYTVTd1A2T3NzWTRZSDMwdEVySG9nTkNjTW1BVTVMWDZlazdHNjdRZFJXR2hMektGc1VLMGJLcWVwMURDVUlXdWRjczJkMFloUGk0T09ldw?oc=5",
+          "when": "05/06 17:20"
         }
       ]
     }
