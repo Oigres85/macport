@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-05 21:39 UTC",
+  "updated": "2026-06-05 23:16 UTC",
   "drivers": [
     {
       "k": "US10Y",
-      "val": "n.d.",
-      "pos": 50,
-      "stato": "n.d.",
-      "chg": null,
-      "fresh": false
+      "val": "rend. ↑",
+      "pos": 75,
+      "stato": "AVVERSO",
+      "chg": -0.1,
+      "fresh": true
     },
     {
       "k": "PETROLIO",
@@ -27,27 +27,27 @@
     },
     {
       "k": "EUR/USD",
-      "val": "n.d.",
-      "pos": 50,
-      "stato": "n.d.",
-      "chg": null,
-      "fresh": false
-    },
-    {
-      "k": "VIX",
-      "val": "vol +6.1%",
+      "val": "1.153",
       "pos": 60,
-      "stato": "VOL IN SALITA",
-      "chg": 6.1,
+      "stato": "AVVERSO LIEVE",
+      "chg": -0.7,
       "fresh": true
     },
     {
-      "k": "TAIWAN / SEMI",
+      "k": "VIX",
       "val": "n.d.",
       "pos": 50,
       "stato": "n.d.",
       "chg": null,
       "fresh": false
+    },
+    {
+      "k": "TAIWAN / SEMI",
+      "val": "-5.8%",
+      "pos": 60,
+      "stato": "MONITORARE",
+      "chg": -5.8,
+      "fresh": true
     }
   ],
   "titoli": [
@@ -59,17 +59,17 @@
       "hz": "LUNGO",
       "conv": "alta",
       "stoppct": 18,
-      "px": 205.1,
-      "chg": -4.4,
-      "vol": 217522551,
-      "fresh": true,
+      "px": null,
+      "chg": null,
+      "vol": null,
+      "fresh": false,
       "exp": {
-        "US10Y": 0,
+        "US10Y": -2,
         "PETROLIO": 0,
         "BITCOIN": 0,
-        "EUR/USD": 0,
-        "VIX": -1,
-        "TAIWAN / SEMI": 0
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": -2
       }
     },
     {
@@ -85,12 +85,12 @@
       "vol": null,
       "fresh": false,
       "exp": {
-        "US10Y": 0,
+        "US10Y": -1,
         "PETROLIO": 0,
         "BITCOIN": 0,
-        "EUR/USD": 0,
-        "VIX": -2,
-        "TAIWAN / SEMI": 0
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": -2
       }
     },
     {
@@ -106,12 +106,12 @@
       "vol": null,
       "fresh": false,
       "exp": {
-        "US10Y": 0,
+        "US10Y": -2,
         "PETROLIO": 0,
         "BITCOIN": 0,
-        "EUR/USD": 0,
-        "VIX": -1,
-        "TAIWAN / SEMI": 0
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": -2
       }
     },
     {
@@ -122,17 +122,17 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 14,
-      "px": null,
-      "chg": null,
-      "vol": null,
-      "fresh": false,
+      "px": 98.95,
+      "chg": -7.1,
+      "vol": 143156378,
+      "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": -1,
         "PETROLIO": 0,
         "BITCOIN": 0,
-        "EUR/USD": 0,
-        "VIX": -1,
-        "TAIWAN / SEMI": 0
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": -1
       }
     },
     {
@@ -148,11 +148,11 @@
       "vol": null,
       "fresh": false,
       "exp": {
-        "US10Y": 0,
+        "US10Y": -1,
         "PETROLIO": 0,
         "BITCOIN": 0,
-        "EUR/USD": 0,
-        "VIX": -2,
+        "EUR/USD": -1,
+        "VIX": 0,
         "TAIWAN / SEMI": 0
       }
     },
@@ -169,11 +169,11 @@
       "vol": 41497564,
       "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": -1,
         "PETROLIO": 0,
         "BITCOIN": -2,
-        "EUR/USD": 0,
-        "VIX": -2,
+        "EUR/USD": -1,
+        "VIX": 0,
         "TAIWAN / SEMI": 0
       }
     },
@@ -185,17 +185,17 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 34,
-      "px": null,
-      "chg": null,
-      "vol": null,
-      "fresh": false,
+      "px": 20.64,
+      "chg": -10.9,
+      "vol": 50012784,
+      "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": -2,
         "PETROLIO": 0,
         "BITCOIN": 0,
-        "EUR/USD": 0,
-        "VIX": -2,
-        "TAIWAN / SEMI": 0
+        "EUR/USD": -1,
+        "VIX": 0,
+        "TAIWAN / SEMI": -1
       }
     },
     {
@@ -206,16 +206,16 @@
       "hz": "BREVISSIMO",
       "conv": "bassa",
       "stoppct": 23,
-      "px": null,
-      "chg": null,
-      "vol": null,
-      "fresh": false,
+      "px": 0.91,
+      "chg": -14.5,
+      "vol": 4796426,
+      "fresh": true,
       "exp": {
-        "US10Y": 0,
+        "US10Y": -1,
         "PETROLIO": 0,
         "BITCOIN": 0,
-        "EUR/USD": 0,
-        "VIX": -2,
+        "EUR/USD": -1,
+        "VIX": 0,
         "TAIWAN / SEMI": 0
       }
     }
@@ -242,32 +242,46 @@
       }
     ],
     "titoli": {
-      "NVDA": [
+      "ARBE": [
         {
-          "t": "Il settore dei chip AI vola senza Nvidia e i flussi di denaro spiegano il motivo",
-          "src": "Yahoo Finanza",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5RQ1RBTzZBMXl6WjZyWWFyNlpYQy1YRDdLOExKb2d4V01fRzh6b3hmYzhaS29jRzVlT3JaYnRTclp4VkJGSUtkMXFGRkxQVUVvQ0RHel8ycU5ab01pLVFMbmJQVEVQQkRxcFJYVjNBcU4xaEtwd3ZKbkV5a0lTNnM?oc=5",
-          "when": "05/06 18:35"
+          "t": "Arbe Robotics completa un’offerta pubblica di azioni ordinarie da 18,5 milioni di dollari",
+          "src": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOHlpVE02Uy1RUW5UY0NueVJnUEdqV193UzBSN0l2WGx1cV9rVHNITHAwTVFZaE94TWhoV2tnOWZtRkkyVjdMaVM4Q2ZhdXY2a2l1RFdWU29XcFA3YVlEbmxHWUpTVVB2RktjeEpRYnYydjZkemR6U19CaUtIWGFfQTlmSzQ3UkJvMGJjMVpmdzZHeERFdWZ6RTYwakowaWRRa2VwMzRJNnVucUZUU0ZkOFc4dEw1aVRtaE9TZ0NUY3hfazgzeXFrR0FyQTQ0RnI2aUZxdjd5TWVTVkk?oc=5",
+          "when": "27/01 08:00"
         },
         {
-          "t": "Insider Nvidia vende azioni per un valore di 3.343.863 dollari, secondo l'ultimo deposito SEC",
-          "src": "MarketScreener Italia",
-          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMnpRZi1aTzJVWnJHNGRsakFrS2tGZGlUeVFWTUtFclIzMDBDLWc3ZWRyRDV2eHFJM19EZEhLTWNQSjBXdXlPY0Q3MG5qMjFHaG5wTmtXWXNQZkw4UTljR25meXVaUVBSSVFOOWVXdk14NDZRUEtEQ3dMRlJjcFdCdHhvM0V4eVVqU29QQ0lVeHdWb2Z0TFVEZ201NFU2UE96WmtSQTk4U0NPcGMwSUg2N19aeDZ0alJRY2Vob1JYUUh1bTcxSmFfa2tNSjBtNDlkdnA1Y3pZcE9GRFZjLWw0cQ?oc=5",
-          "when": "05/06 21:22"
+          "t": "ARBE prezzo azionario | Prezzo target dell'analista 1.50 e Consenso",
+          "src": "eToro",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE95Xy0xcmwwMFNwTjI2bkozVDUyMEJ6N1YyQTlHdHVEWWU5S2RxUExJQTlOX2lkaXZCOFhFY2JISDhJb3hmQ3dySDZDa2ludw?oc=5",
+          "when": "08/07 02:22"
         }
       ],
-      "MSTR": [
+      "RGTI": [
         {
-          "t": "Gli esperti avvertono che Bitcoin ha un problema Microstrategy mentre BTC e il titolo MSTR scendono",
-          "src": "Yahoo Finanza",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORmxicmh5WHptdFczREdob2JXMkM1c1FNdzhxeVJsamdHUWI0emhvNURpT0VSNHRDQzFncEQ3aEd5QXhfYjBUOUc4TFFCM3BMazVmbHJpRzFxU3g4R3N0TV84QTYwc3VneVBiNk5WVGZZU2JCTTdVX2pfLXNjV0ZPanBjRjctSGxXcC1tdUh3?oc=5",
-          "when": "02/06 21:06"
+          "t": "Il CTO di Rigetti Computing David Rivas vende azioni RGTI per $12,68 mln",
+          "src": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSTc4aXpvTERzbzFuNlpGMzNqTFo5MFRSWTVqRzdHOUVkZGdVSVg1Y3VIRUNCNVE3VmZKVmhaTXRfRU4yRldYRVNRR2JEQ2k0R0szZUFKcDI0bDM2SHNJSGJiVnRyUjFTMDVGdHlsR2V1RUVKeWhwNFExUE9ody1qZ3hGdHNhVDFKMnViMHI3VmZrcUdLaFo1d0dfaW15aFZKdl9IZ3hsckppVGM0eTB6blFnTXdxLW96UDd2cV9weXhRLUNNSmgxT3daT3lJWUU?oc=5",
+          "when": "01/06 20:20"
         },
         {
-          "t": "MicroStrategy e Coinbase in calo sulla scia del ribasso del Bitcoin",
-          "src": "MarketScreener Italia",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQU9UNEkzbldtcGRQX2hFdWRMV0dtUmwtRnZ4aTE2anJrOURqRVJSSG9xY1IyYmVQOEh0MWNYdVVkaEZlZGZzd29PaklNaVNaZ0dnMVNvY2F5ZU1wWlpXLWE5N3czMWt3T19RWVc2LUNsYTVTd1A2T3NzWTRZSDMwdEVySG9nTkNjTW1BVTVMWDZlazdHNjdRZFJXR2hMektGc1VLMGJLcWVwMURDVUlXdWRjczJkMFloUGk0T09ldw?oc=5",
-          "when": "05/06 17:20"
+          "t": "Calcolo Quantistico - Rigetti Computing supera le stime di fatturato",
+          "src": "Websim",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSUdCQWZZck9jRWV4cDNpeWl4NjctM3JaNVdpeEF1OVo4Uzhoc3g0YklyalFLSXpXNDVIR1Y5TC1ZVnFkemFsNmZqbllPWXZMOTV2ak9ZaUVySzI5SEtVZkxhTDhyRDM4QWo0MlZfMDQ3T3RMLVBzV3hIN2NwRnZKQzJkTmcwSXJTOWNDOFRWeHJyVlpCQjlfTWpsUW0zam4xSFE1T2VoOGM?oc=5",
+          "when": "04/06 08:45"
+        }
+      ],
+      "INTC": [
+        {
+          "t": "Il rally del 200% delle azioni Intel si interrompe mentre Nvidia colpisce prima del keynote decisivo",
+          "src": "Yahoo Finanza",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1wNnlnU2VwVS05U0lyN2JteThxdGpYNDZxRHNwT0RDb0gyQjRKaEJ2VDVHS2s5VzFvRlJabVNBUXJIQjJxVkFvaERBYXdFQ0hMdFc3eXJwQk90Q1hpZVFuTHBiRkh1S3Q0dW52YUtlTTZQZU5sT2FMYXNYVnE0ZkE?oc=5",
+          "when": "01/06 20:16"
+        },
+        {
+          "t": "Azioni Intel: gli analisti alzano la stima del fair value per la crescita del mercato delle CPU per server",
+          "src": "Morningstar",
+          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZ1BEc1otbXlKeGVhTHlNTGpXV1JuU0dvVDdoWjBpRlQ4YkdUVDk2amhOR3UzdTRrVEk5bllVOHQybEdZekl5M2tpODBpcGE0dHV2X1V6T0w4VXpVdEpncVJBalplTHlTb2ZRN3RJR3dCbkVMTjZjNm1vZXpXdG1sNm5GUE96cWhYSU1XQXlOVjlBZHVxWHd1dWFWZk12OTl0LXREYmMzbUZ5MW40U25NT0prRTQ2UEZfdy03T3cwNEpfengyeTNKV0x4Smh4S3ZGTVRBZGJudkZraGNScXk4?oc=5",
+          "when": "08/05 07:00"
         }
       ]
     }
