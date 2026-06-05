@@ -1,28 +1,28 @@
 {
-  "updated": "2026-06-05 16:06 UTC",
+  "updated": "2026-06-05 19:01 UTC",
   "drivers": [
     {
       "k": "US10Y",
-      "val": "rend. ↑",
-      "pos": 75,
-      "stato": "AVVERSO",
-      "chg": -0.0,
-      "fresh": true
+      "val": "n.d.",
+      "pos": 50,
+      "stato": "n.d.",
+      "chg": null,
+      "fresh": false
     },
     {
       "k": "PETROLIO",
-      "val": "$91",
-      "pos": 75,
-      "stato": "AVVERSO",
-      "chg": -2.2,
-      "fresh": true
+      "val": "n.d.",
+      "pos": 50,
+      "stato": "n.d.",
+      "chg": null,
+      "fresh": false
     },
     {
       "k": "BITCOIN",
-      "val": "$60.1k",
+      "val": "$59.2k",
       "pos": 80,
       "stato": "AVVERSO",
-      "chg": -4.9,
+      "chg": -6.3,
       "fresh": true
     },
     {
@@ -35,19 +35,19 @@
     },
     {
       "k": "VIX",
+      "val": "vol +6.1%",
+      "pos": 60,
+      "stato": "VOL IN SALITA",
+      "chg": 6.1,
+      "fresh": true
+    },
+    {
+      "k": "TAIWAN / SEMI",
       "val": "n.d.",
       "pos": 50,
       "stato": "n.d.",
       "chg": null,
       "fresh": false
-    },
-    {
-      "k": "TAIWAN / SEMI",
-      "val": "-2.2%",
-      "pos": 60,
-      "stato": "MONITORARE",
-      "chg": -2.2,
-      "fresh": true
     }
   ],
   "titoli": [
@@ -59,17 +59,17 @@
       "hz": "LUNGO",
       "conv": "alta",
       "stoppct": 18,
-      "px": null,
-      "chg": null,
-      "vol": null,
-      "fresh": false,
+      "px": 205.17,
+      "chg": -4.3,
+      "vol": 97841508,
+      "fresh": true,
       "exp": {
-        "US10Y": -2,
-        "PETROLIO": -1,
+        "US10Y": 0,
+        "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": 0,
-        "VIX": 0,
-        "TAIWAN / SEMI": -2
+        "VIX": -1,
+        "TAIWAN / SEMI": 0
       }
     },
     {
@@ -80,17 +80,17 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": 487.11,
-      "chg": -2.5,
-      "vol": 9603556,
+      "px": 466.0,
+      "chg": -6.7,
+      "vol": 17312901,
       "fresh": true,
       "exp": {
-        "US10Y": -1,
-        "PETROLIO": -1,
+        "US10Y": 0,
+        "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": 0,
-        "VIX": 0,
-        "TAIWAN / SEMI": -2
+        "VIX": -2,
+        "TAIWAN / SEMI": 0
       }
     },
     {
@@ -101,17 +101,17 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 18,
-      "px": 927.12,
-      "chg": -1.8,
-      "vol": 19114420,
-      "fresh": true,
+      "px": null,
+      "chg": null,
+      "vol": null,
+      "fresh": false,
       "exp": {
-        "US10Y": -2,
-        "PETROLIO": -1,
+        "US10Y": 0,
+        "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": 0,
-        "VIX": 0,
-        "TAIWAN / SEMI": -2
+        "VIX": -1,
+        "TAIWAN / SEMI": 0
       }
     },
     {
@@ -122,17 +122,17 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 14,
-      "px": 103.19,
-      "chg": -3.1,
-      "vol": 36131008,
-      "fresh": true,
+      "px": null,
+      "chg": null,
+      "vol": null,
+      "fresh": false,
       "exp": {
-        "US10Y": -1,
-        "PETROLIO": -1,
+        "US10Y": 0,
+        "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": 0,
-        "VIX": 0,
-        "TAIWAN / SEMI": -1
+        "VIX": -1,
+        "TAIWAN / SEMI": 0
       }
     },
     {
@@ -143,16 +143,16 @@
       "hz": "MEDIO",
       "conv": "media",
       "stoppct": 23,
-      "px": null,
-      "chg": null,
-      "vol": null,
-      "fresh": false,
+      "px": 391.16,
+      "chg": -7.0,
+      "vol": 34960411,
+      "fresh": true,
       "exp": {
-        "US10Y": -1,
-        "PETROLIO": -2,
+        "US10Y": 0,
+        "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": 0,
-        "VIX": 0,
+        "VIX": -2,
         "TAIWAN / SEMI": 0
       }
     },
@@ -164,16 +164,16 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 29,
-      "px": null,
-      "chg": null,
-      "vol": null,
-      "fresh": false,
+      "px": 114.87,
+      "chg": -7.5,
+      "vol": 18505959,
+      "fresh": true,
       "exp": {
-        "US10Y": -1,
+        "US10Y": 0,
         "PETROLIO": 0,
         "BITCOIN": -2,
         "EUR/USD": 0,
-        "VIX": 0,
+        "VIX": -2,
         "TAIWAN / SEMI": 0
       }
     },
@@ -185,17 +185,17 @@
       "hz": "BREVE",
       "conv": "bassa",
       "stoppct": 34,
-      "px": null,
-      "chg": null,
-      "vol": null,
-      "fresh": false,
+      "px": 20.16,
+      "chg": -13.0,
+      "vol": 31731112,
+      "fresh": true,
       "exp": {
-        "US10Y": -2,
-        "PETROLIO": -1,
+        "US10Y": 0,
+        "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": 0,
-        "VIX": 0,
-        "TAIWAN / SEMI": -1
+        "VIX": -2,
+        "TAIWAN / SEMI": 0
       }
     },
     {
@@ -211,11 +211,11 @@
       "vol": null,
       "fresh": false,
       "exp": {
-        "US10Y": -1,
+        "US10Y": 0,
         "PETROLIO": 0,
         "BITCOIN": 0,
         "EUR/USD": 0,
-        "VIX": 0,
+        "VIX": -2,
         "TAIWAN / SEMI": 0
       }
     }
@@ -242,46 +242,46 @@
       }
     ],
     "titoli": {
-      "INTC": [
+      "RGTI": [
         {
-          "t": "Il rally del 200% delle azioni Intel si interrompe mentre Nvidia colpisce prima del keynote decisivo",
+          "t": "Il CTO di Rigetti Computing David Rivas vende azioni RGTI per $12,68 mln",
+          "src": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSTc4aXpvTERzbzFuNlpGMzNqTFo5MFRSWTVqRzdHOUVkZGdVSVg1Y3VIRUNCNVE3VmZKVmhaTXRfRU4yRldYRVNRR2JEQ2k0R0szZUFKcDI0bDM2SHNJSGJiVnRyUjFTMDVGdHlsR2V1RUVKeWhwNFExUE9ody1qZ3hGdHNhVDFKMnViMHI3VmZrcUdLaFo1d0dfaW15aFZKdl9IZ3hsckppVGM0eTB6blFnTXdxLW96UDd2cV9weXhRLUNNSmgxT3daT3lJWUU?oc=5",
+          "when": "01/06 20:20"
+        },
+        {
+          "t": "Calcolo Quantistico - Rigetti Computing supera le stime di fatturato",
+          "src": "Websim",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSUdCQWZZck9jRWV4cDNpeWl4NjctM3JaNVdpeEF1OVo4Uzhoc3g0YklyalFLSXpXNDVIR1Y5TC1ZVnFkemFsNmZqbllPWXZMOTV2ak9ZaUVySzI5SEtVZkxhTDhyRDM4QWo0MlZfMDQ3T3RMLVBzV3hIN2NwRnZKQzJkTmcwSXJTOWNDOFRWeHJyVlpCQjlfTWpsUW0zam4xSFE1T2VoOGM?oc=5",
+          "when": "04/06 08:45"
+        }
+      ],
+      "MSTR": [
+        {
+          "t": "Gli esperti avvertono che Bitcoin ha un problema Microstrategy mentre BTC e il titolo MSTR scendono",
           "src": "Yahoo Finanza",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1wNnlnU2VwVS05U0lyN2JteThxdGpYNDZxRHNwT0RDb0gyQjRKaEJ2VDVHS2s5VzFvRlJabVNBUXJIQjJxVkFvaERBYXdFQ0hMdFc3eXJwQk90Q1hpZVFuTHBiRkh1S3Q0dW52YUtlTTZQZU5sT2FMYXNYVnE0ZkE?oc=5",
-          "when": "01/06 20:16"
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORmxicmh5WHptdFczREdob2JXMkM1c1FNdzhxeVJsamdHUWI0emhvNURpT0VSNHRDQzFncEQ3aEd5QXhfYjBUOUc4TFFCM3BMazVmbHJpRzFxU3g4R3N0TV84QTYwc3VneVBiNk5WVGZZU2JCTTdVX2pfLXNjV0ZPanBjRjctSGxXcC1tdUh3?oc=5",
+          "when": "02/06 21:06"
         },
         {
-          "t": "Azioni Intel: gli analisti alzano la stima del fair value per la crescita del mercato delle CPU per server",
+          "t": "Jim Cramer suggerisce che Michael Saylor “ha ucciso Bitcoin” mentre Microstrategy naviga in un mare di FUD",
+          "src": "Yahoo Finanza",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVXhVNkRNbUwtOVl4WUF5N0FPdXMxbFVaZkJmNjBsM2RVeUpjRVQyN2Vta01iVEdoOUxTTHFQN0t2ZzVSbGRQZkJvdlptYm1iWXhrZDNrX01BWTQxWmxQVEF6NG9wTzZrQlJmWFRPOXhRX2RvY3d3OXdIY2VBN0poamhFenpVUHduTXA4dGJn?oc=5",
+          "when": "04/06 22:00"
+        }
+      ],
+      "TSLA": [
+        {
+          "t": "Tesla, Jp Morgan cambia rotta: target price triplicato",
+          "src": "orafinanza.it",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdnBCaDREV2xvMU9kcWowdlh0d2ppSU1FS3puOEJpSmxvN05jeldLU2ljc2QteEVzQlRSd25Lblg0YnNsOTRkOW5ETTQxelRPS1YteUlXTy1uTUN3NU5oXzR5emUteHFYNURORmNBQklVNDNhblJjSXRuVXFGZVlKbnU3MHZxR1NDVTVTYzFrNG1fQQ?oc=5",
+          "when": "04/06 23:45"
+        },
+        {
+          "t": "IPO di SpaceX: c’è il rischio di politiche poco favorevoli per gli azionisti",
           "src": "Morningstar",
-          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZ1BEc1otbXlKeGVhTHlNTGpXV1JuU0dvVDdoWjBpRlQ4YkdUVDk2amhOR3UzdTRrVEk5bllVOHQybEdZekl5M2tpODBpcGE0dHV2X1V6T0w4VXpVdEpncVJBalplTHlTb2ZRN3RJR3dCbkVMTjZjNm1vZXpXdG1sNm5GUE96cWhYSU1XQXlOVjlBZHVxWHd1dWFWZk12OTl0LXREYmMzbUZ5MW40U25NT0prRTQ2UEZfdy03T3cwNEpfengyeTNKV0x4Smh4S3ZGTVRBZGJudkZraGNScXk4?oc=5",
-          "when": "08/05 07:00"
-        }
-      ],
-      "AMD": [
-        {
-          "t": "Azioni AMD in rialzo mentre l'ottimismo sull'IA avvicina la valutazione a $900 billion",
-          "src": "TradingView",
-          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5UUJOMXh1cFQ2S2ZTbWw1c1UxMXRzd1ZiZlprWlcxdFFNZC1VUGhIazEtbXB2c296VG1JYTI3YVkteDRLZHJqanV5RTZZTXVScXpqbUxxMzk5UjJCT2x1dm5TY2JUQQ?oc=5",
-          "when": "03/06 20:21"
-        },
-        {
-          "t": "ARK di Cathie Wood acquista azioni Alphabet e vende AMD",
-          "src": "Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSmR5SGY2bmVoYVJTcUpFSjJVbjVUY0xSZjdiQlZRaWlvMzBuc1h5bWsxZzZSX0tvVnlsTVp2c3RMWk13WUktSE1JMUtLUU9CZ01xUlJUWklOMHNKYmxDRUcwSzYzcUZCLUpwVnhPazZTSUxDa1p5UThjMU9xczhXMmQtbHo1V2J1d09tNjlQak9rcUx4VHJwWFJuRERTdGpjUGNZTDkyS3o2WGZZOUFyNg?oc=5",
-          "when": "04/06 00:03"
-        }
-      ],
-      "MU": [
-        {
-          "t": "Il CEO di Micron Tecnologia Sanjay Mehrotra vende azioni per $21,5 mln",
-          "src": "Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUDdTaXJJaXNHODRYQm9ZV0l4R0xzQ2kzV1lmWGlsUXRHUHNaVUl4TEdaQzVqcXlwUXhLRDFySkx3MU4tWVJ1dk8wdjRPUk5YUEpQUnVmeEpzS2hqYTdrNjduTDVTUkR0UFdDQk1PdFQzUkhEWG44LURDbjNMUmN2VEtpRldwTXZKSlJVLTZnMzZXUHVQd2JQY05CYU1rcmVfbmNhTzlGNUthY2ZNcXUyYXk5dEdLMkUyNjU3Q0JTTkdWbm1RUmRxNVRUbVQ?oc=5",
-          "when": "03/06 08:09"
-        },
-        {
-          "t": "Micron Technology: insider vende azioni per un valore di 2.498.589 dollari, secondo l'ultimo deposito SEC",
-          "src": "MarketScreener Italia",
-          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNY0g5WnFuNDltWDJSLTM5Q2c2RS1td28zRFFhRjFaU0pGY0ktN1paZTZlUW0wSVZIbTVBbnNOWWlqUHFfN0pIMWFBZFdLX2Y2RDNPb3ZpQ3cxZ19oaHE0X0E2d2Y4akdFakJxemhxQzk1Y3E4dzJ2dTZkdkR0cTM0SGdrRm9MQ3VTc3BXNS1FWktRRlh3SnRPQWJKZWdIdnpTLU80b2tKY29jYkhBa08zQWJvUnJLNERmNWxFRzQxNmdneWs1c2hpZXFZZEdmUDVtcW5obnBleVdXbERCT2lJVUNJRUQyQXFH?oc=5",
-          "when": "02/06 21:32"
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYjFsY193U2V2TVF0U1JZdC05RUstQ1VfYVpqRjducTRBVk1Qc0VRRU9TcGtuNU9uVXhaMWVyM29qMzc3dGxSc3NiNlZLRkpzOGc0TzJFRHFqUmdxQ3RRZm9WLVpldlJOWXRqakFYZU1wSzhDSmg4TlFtTHRORFNNRFNpWWRNYzhBNWRRMkJsX0Yzc3VGMHhSUzZ0N2dEeFAtV2pzcVVCUDc3a2x4Z3hzVEdyUWw?oc=5",
+          "when": "01/06 13:43"
         }
       ]
     }
