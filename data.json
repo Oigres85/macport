@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-08 19:26 UTC",
+  "updated": "2026-06-08 21:56 UTC",
   "drivers": [
     {
       "k": "US10Y",
@@ -221,26 +221,7 @@
     }
   ],
   "news": {
-    "macro": [
-      {
-        "t": "Borse, Bitcoin e Nasdaq a picco tra timori tassi e fuga dal tech",
-        "src": "Il Sole 24 ORE",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOa0RSQ3RsOUVDT3JrNnNDMkJ5WG5GOFcwMTRiNENLOGg4cjlfeHdSbzN1bVFPY1BLU2c1RzdyQzI4UnFaMHBrUFE1VlRuWm9pT1gwRENPRFVCRzRoZF9fakwtbkxULWdGMl85WE0tTnB3dmlvWlQ0YkJHQnBCMENWcQ?oc=5",
-        "when": "05/06 05:27"
-      },
-      {
-        "t": "Borsa oggi 5 giugno: Wall Street e timori tech appesantiscono l’Europa. Milano maglia nera con Stm, sbandano le banche - DIRETTA",
-        "src": "firstonline.info",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMm9lLXo5VnJRcEN3cmFCa1VESFFzR0dGODhLR2lCMjJ1NXhNY0gzck1PU2FmcEJjTngyRUpyRnlCZ3pqUmFrSXA5TWZmdURMNG81Q3lzSmdHUTktOFFDRGE1alpoY1Q1dWlna2Z6a1llUl84Qm1QNW5jclZoNnpkS3ZmdUZySlNCd2t1TTBXZmltVURCLVBDU2RmWElMbkRnVFV1bkI2SVZBUjNLTnhOTWswMGlJaWVOTDgyd2dUTHBoQU9EYVNNX2pyRHZ0bGYwLWpkYVNYdVBvTHIyZ3QwY2dVWDN5emM?oc=5",
-        "when": "05/06 08:47"
-      },
-      {
-        "t": "La diretta da Wall Street | Le borse Usa chiudono deboli: Dow Jones +0,02%, Nasdaq +0,17% e S&P 500 -0,01%",
-        "src": "Milano Finanza",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOSEtyM1FqQnN4emozY2E0Ti11elVqVFVZOFNvUVZEQ0xvRnhUOEZnamdFMWdQRnUySkRCUHhhdklKMExBMm4wbUFaZmd6VjI2b3pHMUxxYkZLanpyM0V0NzNfalJ3UFRmYXZuMnZRcEotSVR1N0otMnhPSUFKNTJkcGZZdHVXY3d1ZndVRHpKTzlVQjNYY2Nsc2ZPeU01YnRiYVpaTkNPQzJtSV9FZWs1emlubzRURmxLSTl5bTRxZVlVYmNUZmNDWGZrNDRTVGZTTnkwbFJ6REtpTV9XaWlDM2FsY0dGRTRiTjBqVXJvMHo?oc=5",
-        "when": "28/01 08:00"
-      }
-    ],
+    "macro": [],
     "titoli": {}
   }
 }
